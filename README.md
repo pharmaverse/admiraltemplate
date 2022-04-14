@@ -1,2 +1,3 @@
-# pharmaverse_templates
+# Pharmaverse Templates
+
 Recommended Structure for Pharmaverse R pacakges
