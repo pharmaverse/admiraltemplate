@@ -2,7 +2,7 @@
 
 Recommended Template for Pharmaverse R pacakges
 
-This template will help to standardize the collection of R packages involved in the Pharmaverse effort.  It will also reduce the burden on new users to develop a package to be included in the pharmaver...
+This template will help to standardize the collection of R packages involved in the Pharmaverse effort.  It will also reduce the burden on new users to develop a package to be included in the pharmaverse.
 
 
 Includes the Following:
@@ -11,4 +11,5 @@ Includes the Following:
 *  Pull Request Template
 *  `renv` folder
 *  Workflow actions
-*  
+    *  RMD
+*  Stuff
