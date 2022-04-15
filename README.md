@@ -8,8 +8,14 @@ This template will help to standardize the collection of R packages involved in 
 Includes the Following:
 
 *  Issue Templates
+   * Bug Template
+   * Feature Request
+   * Documentation Request/Update
+   * Onboarding
 *  Pull Request Template
 *  `renv` folder
 *  Workflow actions
     *  RMD
-*  Stuff
+*  R folder 
+*  test folder
+*  .renv loc
