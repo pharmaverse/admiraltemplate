@@ -1,0 +1,71 @@
+Package: admiral
+Type: Package
+Title: ADaM in R Asset Library
+Version: 0.6.3
+Authors@R: c(
+    person("Thomas", "Neitmann", email = "thomas.neitmann@roche.com", role = c("aut", "cre")),
+    person("Alice", "Ehmann", role = "aut"),
+    person("Stefan", "Bundfuss", role = "aut"),
+    person("Samia", "Kabi", role = "aut"),
+    person("Vignesh", "Thanikachalam", role = "aut"),
+    person("Ondrej", "Slama", role = "aut"),
+    person("Shimeng", "Huang", role = "aut"),
+    person("Robin", "Koeger", role = "ctb"),
+    person("Gordon", "Miller", role = "ctb"),
+    person("Teckla", "Akinyi", role = "aut"),
+    person("Eric", "Simms", role = "aut"),
+    person("Michael", "Thorpe", role = "aut"),
+    person("Pavan", "Kumar", role = "ctb"),
+    person("Hamza", "Rahal", role = "ctb"),
+    person("Annie", "Yang", role = "aut"),
+    person("Ross", "Farrugia", role = "ctb"),
+    person("Ben", "Straub", role = "aut"),
+    person("Andrew", "Smith", role = "aut"),
+    person("Konstantina", "Koukourikou", role = "ctb"),
+    person("Tom", "Ratford", role = "ctb"),
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+    person("GlaxoSmithKline LLC", role = c("cph", "fnd"))
+    )
+Description: A toolbox for programming Clinical Data Standards Interchange Consortium
+    (CDISC) compliant Analysis Data Model (ADaM) datasets in R. ADaM datasets are a
+    mandatory part of any New Drug or Biologics License Application submitted to the
+    United States Food and Drug Administration (FDA). Analysis derivations are
+    implemented in accordance with the "Analysis Data Model Implementation Guide"
+    (CDISC Analysis Data Model Team, 2021, <https://www.cdisc.org/standards/foundational/adam/adamig-v1-3-release-package>).
+License: Apache License (>= 2)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: R (>= 3.5)
+Imports:
+    admiral.test,
+    assertthat,
+    dplyr,
+    lubridate,
+    magrittr,
+    purrr,
+    rlang,
+    stringr,
+    hms,
+    tidyr,
+    tidyselect
+Suggests:
+    devtools,
+    diffdf,
+    lifecycle,
+    lintr,
+    pkgdown,
+    testthat,
+    knitr,
+    methods,
+    miniUI,
+    rmarkdown,
+    roxygen2,
+    spelling,
+    styler,
+    tibble,
+    usethis,
+    covr,
+    DT
+VignetteBuilder: knitr
