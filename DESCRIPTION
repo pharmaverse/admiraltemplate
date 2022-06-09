@@ -1,31 +1,9 @@
-Package: admiral
+Package: admiralext
 Type: Package
-Title: ADaM in R Asset Library
-Version: 0.6.3
+Title: ADaM in R Asset Library - Extension
+Version: 0.0.1
 Authors@R: c(
-    person("Thomas", "Neitmann", email = "thomas.neitmann@roche.com", role = c("aut", "cre")),
-    person("Alice", "Ehmann", role = "aut"),
-    person("Stefan", "Bundfuss", role = "aut"),
-    person("Samia", "Kabi", role = "aut"),
-    person("Vignesh", "Thanikachalam", role = "aut"),
-    person("Ondrej", "Slama", role = "aut"),
-    person("Shimeng", "Huang", role = "aut"),
-    person("Robin", "Koeger", role = "ctb"),
-    person("Gordon", "Miller", role = "ctb"),
-    person("Teckla", "Akinyi", role = "aut"),
-    person("Eric", "Simms", role = "aut"),
-    person("Michael", "Thorpe", role = "aut"),
-    person("Pavan", "Kumar", role = "ctb"),
-    person("Hamza", "Rahal", role = "ctb"),
-    person("Annie", "Yang", role = "aut"),
-    person("Ross", "Farrugia", role = "ctb"),
-    person("Ben", "Straub", role = "aut"),
-    person("Andrew", "Smith", role = "aut"),
-    person("Konstantina", "Koukourikou", role = "ctb"),
-    person("Tom", "Ratford", role = "ctb"),
-    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
-    person("GlaxoSmithKline LLC", role = c("cph", "fnd"))
-    )
+    person("Open", "Source", email = "r.pkg@opensource.com", role = c("aut", "cre"))
 Description: A toolbox for programming Clinical Data Standards Interchange Consortium
     (CDISC) compliant Analysis Data Model (ADaM) datasets in R. ADaM datasets are a
     mandatory part of any New Drug or Biologics License Application submitted to the
