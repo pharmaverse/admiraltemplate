@@ -1,11 +1,9 @@
-url: https://pharmaverse.github.io/admiral/
-
 template:
-  bootstrap: 5
   params:
     bootswatch: flatly
-search:
-  exclude: ['news/index.html']
+    docsearch:
+      api_key: 2d4895759f79e89d6eb1c3b990bca6d8
+      index_name: pharmaverse
 repo:
   url:
     home: https://github.com/pharmaverse/admiral/
@@ -15,6 +13,11 @@ repo:
 news:
   cran_dates: false
 reference:
+- title: Hello and Welcome
+- subtitle: Hello
+  desc: General example functions
+  contents:
+  - has_keyword('hello')
 - title: Derivations
   desc: Derivations add one or more variables or parameters to the input
         dataset and return the extended dataset.
@@ -63,21 +66,12 @@ reference:
   desc: Functions specific for ADCM
   contents:
   - has_keyword('adcm')
-- subtitle: ADLB
-  desc: Functions specific for ADLB
-  contents:
-  - has_keyword('adlb')
 
 - title: Other Keywords
 - subtitle: Timing
-  desc: Function related to timing, e.g. deriving dates, imputing dates, converting dates, deriving duration, ...
+  desc: Function related to timing, e.g., deriving dates, imputing dates, converting dates, deriving duration, ...
   contents:
   - has_keyword('timing')
-
-- subtitle: High Order Functions
-  desc: Functions which call other derivations, e.g. on subset of input dataset or multiple times with varying parameters.
-  contents:
-  - has_keyword('high_order_function')
 
 - subtitle: Source Specifications
   desc: Classes defining sources for derivations where variables or observations from more than one dataset are considered, e.g., like in `derive_var_lstalvdt()`
@@ -89,14 +83,13 @@ reference:
   contents:
   - has_keyword('tte_source')
 
-- subtitle: Metadata
-  desc: Functions related to expanding or providing further context for other data
-  contents:
-  - has_keyword('metadata')
-
 - title: ADaM Datasets
 - contents:
-  - starts_with("admiral_")
+  - adae
+  - adcm
+  - adsl
+  - advs
+  - adex
 
 - title: User Utilities
 - contents:
@@ -115,18 +108,6 @@ reference:
 - subtitle: Various
 - contents:
   - has_keyword("dev_utility")
-
-- title: Miscellaneous
-- contents:
-  - ex_single
-  - get_terms_from_db
-  - print.derivation_slice
-  - print.tte_source
-  - queries
-  - validate_query
-  - validate_sdg_select
-  - validate_smq_select
-  - assert_db_requirements
 
 articles:
 - title: User Guides

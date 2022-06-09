@@ -22,3 +22,6 @@
 ^vignettes/.+png$
 ^LICENSE\.md$
 ^\.github$
+^admiralext\.Rcheck$
+^admiralext.*\.tar\.gz$
+^admiralext.*\.tgz$

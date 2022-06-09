@@ -1,9 +1,9 @@
 Package: admiralext
 Type: Package
-Title: ADaM in R Asset Library - Extension
+Title: ADaM in R Asset Library - xyz Extension
 Version: 0.0.1
 Authors@R: c(
-    person("Open", "Source", email = "r.pkg@opensource.com", role = c("aut", "cre"))
+    person("Thomas", "Neitmann", email = "thomas.neitmann@roche.com", role = c("aut", "cre")))
 Description: A toolbox for programming Clinical Data Standards Interchange Consortium
     (CDISC) compliant Analysis Data Model (ADaM) datasets in R. ADaM datasets are a
     mandatory part of any New Drug or Biologics License Application submitted to the
@@ -27,11 +27,11 @@ Imports:
     stringr,
     hms,
     tidyr,
-    tidyselect
+    tidyselect,
+    lifecycle
 Suggests:
     devtools,
     diffdf,
-    lifecycle,
     lintr,
     pkgdown,
     testthat,
