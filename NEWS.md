@@ -1,4 +1,4 @@
-# admiral extension 0.0.1
+# admiralext 0.0.1
 
 ## New Features
 

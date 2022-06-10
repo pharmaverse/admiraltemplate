@@ -63,16 +63,20 @@ _Note: The ordering numbers below are suggested but don’t all need to strictly
 
 ## Quick Start Guide for Template 
 
-Please throughly read the Package Extension Guidance(#gui).  The intention of the Quick Start is to just get the template code into a new repo and check that the package works in your environment.  Please contact us via slack if any issues arise
+Please throughly read the Package Extension Guidance.  The intention of the Quick Start is to just get the template code into a new repo and check that the package works in your environment.  Please contact us via slack if any issues arise.
 
 1.  Click the Green 'Use this Template' Button.
-2.  Change owner to `pharmaverse` and enter your repository name
-3.  Once repo has been created click Green Code button and download the repo using `https` or `ssh`
-4.  Run `renv::restore()` - you will see a prompt and this will take a few minutes
-5.  Update/Remove the following files
-  - Descr
-  - .Rproj
-  - 
-6.  Run devtools
-7.  Run pkgdown
-8.  Test out a dummy 
+1.  Change owner to `pharmaverse` and enter your repository name
+1.  Once repo has been created click Green Code button and download the repo using `https` or `ssh`
+1.  Run `renv::restore()` - you will see a prompt and this will take a few minutes
+     - This will ensure that your development environment for your extension package is        synced with other admiral packages
+1.  Update/Remove the following files to use your extension name:
+    - `DESCRIPTION` File - Name, Authors
+    - `admiralext.Rproj`
+    - `testthat.R`
+    - `News.md`
+1.  Run `devtools::load_all()` and resolve issues
+1.  Run `devtools::document()` and reolve issues
+1.  Run `pkgdown::build_site()`
+    -  Reach out to slack for help with creating a hex sticker/logo to replace pharmaverse logo
+1.  Test out a dummy branch and do a Pull Request to ensure CI/CD works.
