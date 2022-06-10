@@ -28,7 +28,8 @@ Imports:
     hms,
     tidyr,
     tidyselect,
-    lifecycle
+    lifecycle,
+    admiral
 Suggests:
     devtools,
     diffdf,

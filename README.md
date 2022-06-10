@@ -1,4 +1,11 @@
-# admiral Template
+# admiral package extenstion Template
+
+- Extension Expectations(#ext)
+- What is included in the template?(#inc)
+- Package Extension Guidance(#gui)
+- Quick Start Guide for Template(#quick)
+
+## Extension Expectations  
 
 To be included as an `{admiral}` package extension we expect developers to adhere to the following standards:
 
@@ -11,6 +18,8 @@ To be included as an `{admiral}` package extension we expect developers to adher
 
 We have developed this repository template in order to reduce the burden on developers to follow these standards. This template will also help to harmonize the `{admiral}` family of R packages, to ensure a consistent user experience and ease of installing and adopting all the packages. With this in mind, we expect the same core package dependencies and versions as used for `{admiral}`.
 
+## What is included in the template?
+
 The repository template includes the following:
 
 *  License file (Apache 2.0 - but company co-developers need to be added to copyright section)
@@ -22,7 +31,7 @@ The repository template includes the following:
 *  Package badges (Test coverage; etc)
 *  Branch protection rules
 
-# Package Extensions Guidance
+## Package Extensions Guidance
 
 `{admiral}` is made up of a family of packages and we foresee this only growing over time to cover more specific areas such as TA (Therapeutic Area) package extensions, with a wider range of companies and individuals getting on board to join development efforts. This step-by-step guidance talks through our recommendations on how new development teams would go about creating such package extensions. It is critical that this guidance is followed, as our users need to feel a consistent experience when working across `{admiral}` packages. If an admiral package extension doesn’t follow these conventions then we wouldn’t include it under pharmaverse and as part of the `{admiral}` family.
 
@@ -51,3 +60,18 @@ _Note: The ordering numbers below are suggested but don’t all need to strictly
 1. It is important that the `{admiral}` family of packages keep to a similar release schedule and cadence, in order to ease adoption by our users and to give clear expectations. The `{admiral}` package cadence of releases is one every 3-4 months, and the core package will set the release schedule for the package extensions to follow, i.e. once `{admiral}` releases we'd expect package extension releases targeted within a 2 week window. These releases are communicated via our Slack channel as well as at our quarterly user community meetings.
 1. Once you are happy your package extension has been well tested and is at a sufficient state then make a submission to CRAN. The technical lead should be named as maintainer. After the CRAN release, you should advertise this via Slack & LinkedIn.
 1. Plan any future further enhancements and make issues. When your team feels ready you can open up to development contributions for these from the wider community - see https://pharmaverse.github.io/admiral/articles/contribution_model.html. Please use the _“good first issue”_ (ideal for new starters) & _“help wanted”_ (ideal for more experienced contributors) issue labels.
+
+## Quick Start Guide for Template(#get)
+
+Please throughly read the Package Extension Guidance(#gui).  The intention of the Quick Start is to just get the template code into a new repo and check that the package works in your environment.  Please contact us via slack if any issues arise
+
+1.  Click 
+1.  Click Code button and 
+1.  Run `renv::restore()` - you will see a prompt and this will take a few minutes
+1.  Update/Remove the following files
+  - Descr
+  - .Rproj
+  - 
+1.  Run devtools
+1.  Run pkgdown
+1.  Test out a dummy 
