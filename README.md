@@ -1,13 +1,8 @@
-# admiral <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
-
-# admiral package extenstion Template
+# admiral package extenstion Template <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
 
 - [Extension Expectations](#extension-expectations)
-
 - [What is included in the template](#what-is-included-in-the-template)
-
 - [Package Extension Guidance](#package-extension-guidance)
-
 - [Quick Start Guide for Template](#quick-start-guide-for-template)
 
 ## Extension Expectations 

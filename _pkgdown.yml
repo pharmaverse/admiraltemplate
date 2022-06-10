@@ -6,9 +6,9 @@ template:
       index_name: pharmaverse
 repo:
   url:
-    home: https://github.com/pharmaverse/admiral/
-    source: https://github.com/pharmaverse/admiral/blob/main/
-    issue: https://github.com/pharmaverse/admiral/issues/
+    home: https://github.com/pharmaverse/admiraltemplate
+    source: https://github.com/pharmaverse/admiraltemplate/blob/main/
+    issue: https://github.com/pharmaverse/admiraltemplate/issues/
     user: https://github.com/
 news:
   cran_dates: false
