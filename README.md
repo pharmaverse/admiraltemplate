@@ -1,3 +1,5 @@
+# admiral <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
+
 # admiral package extenstion Template
 
 - [Extension Expectations](#extension-expectations)
@@ -68,13 +70,14 @@ _Note: The ordering numbers below are suggested but don’t all need to strictly
 
 Please throughly read the Package Extension Guidance(#gui).  The intention of the Quick Start is to just get the template code into a new repo and check that the package works in your environment.  Please contact us via slack if any issues arise
 
-1.  Click 
-1.  Click Code button and 
-1.  Run `renv::restore()` - you will see a prompt and this will take a few minutes
-1.  Update/Remove the following files
+1.  Click the Green 'Use this Template' Button.
+2.  Change owner to `pharmaverse` and enter your repository name
+3.  Once repo has been created click Green Code button and download the repo using `https` or `ssh`
+4.  Run `renv::restore()` - you will see a prompt and this will take a few minutes
+5.  Update/Remove the following files
   - Descr
   - .Rproj
   - 
-1.  Run devtools
-1.  Run pkgdown
-1.  Test out a dummy 
+6.  Run devtools
+7.  Run pkgdown
+8.  Test out a dummy 
