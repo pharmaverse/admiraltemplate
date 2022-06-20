@@ -63,7 +63,7 @@ _Note: The ordering numbers below are suggested but don’t all need to strictly
 
 ## Quick Start Guide for Template 
 
-Please throughly read the Package Extension Guidance.  The intention of the Quick Start is to just get the template code into a new repo and check that the package works in your environment.  Please contact us via slack if any issues arise.
+Please thoroughly read the Package Extension Guidance above.  The intention of the Quick Start is to just get the template code into a new repo and check that the package works in your environment.  Please contact us via slack if any issues arise.
 
 1.  Click the Green 'Use this Template' Button.
 1.  Change owner to `pharmaverse` and enter your repository name
@@ -80,3 +80,4 @@ Please throughly read the Package Extension Guidance.  The intention of the Quic
 1.  Run `pkgdown::build_site()`
     -  Reach out to slack for help with creating a hex sticker/logo to replace pharmaverse logo
 1.  Test out a dummy branch and do a Pull Request to ensure CI/CD works.
+1.  Any clearly dummy files like `R/my_first_fcn.R` or `inst/templates/ad_adxx.R` can be updated or removed.
