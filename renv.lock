@@ -76,13 +76,15 @@
       "Package": "admiral",
       "Version": "0.7.0",
       "Source": "Repository",
-      "Repository": "CRAN"
+      "Repository": "CRAN",
+      "Hash": "677963ed23698fabf4b9577c89c55266"
     },
     "admiral.test": {
       "Package": "admiral.test",
       "Version": "0.2.0",
       "Source": "Repository",
-      "Repository": "CRAN"
+      "Repository": "CRAN",
+      "Hash": "a15d620cfb0a3d521d9c062fab8e9605"
     },
     "askpass": {
       "Package": "askpass",
