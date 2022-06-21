@@ -75,12 +75,14 @@
     "admiral": {
       "Package": "admiral",
       "Version": "0.7.0",
-      "Source": "Repository"
+      "Source": "Repository",
+      "Repository": "CRAN"
     },
     "admiral.test": {
       "Package": "admiral.test",
       "Version": "0.2.0",
-      "Source": "Repository"
+      "Source": "Repository",
+      "Repository": "CRAN"
     },
     "askpass": {
       "Package": "askpass",
