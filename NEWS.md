@@ -2,15 +2,16 @@
 
 ## New Features
 
-- Stuff that you did (#ISSUE-NUMBER)
+- You can link the GitHub Issue to Chagnelog by using (#ISSUE-NUMBER)
 
 ## Updates of Existing Functions
 
- - Stuff that you did (#ISSUE-NUMBER)
+ - Updates that you have made for this version (#ISSUE-NUMBER)
 
 ## Breaking Changes
 
- - Stuff that you did (#ISSUE-NUMBER)
+ - Deprecated functions. (#ISSUE-NUMBER)
+ - Bug Fixes (#ISSUE-NUMBER)
 
 ## Documentation
 
