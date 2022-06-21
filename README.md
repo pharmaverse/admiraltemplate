@@ -1,5 +1,14 @@
 # admiral package extension Template <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
 
+<!-- badges: start -->
+[<img src="http://pharmaverse.org/shields/pharmaverse.svg">](https://pharmaverse.org)
+[![CRAN status](https://www.r-pkg.org/badges/version/admiral)](https://CRAN.R-project.org/package=admiral)
+[![R-CMD-check](https://github.com/pharmaverse/admiral/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/pharmaverse/admiral/actions/workflows/R-CMD-check.yml)
+[![Test Coverage](https://raw.githubusercontent.com/pharmaverse/admiral/badges/devel/test-coverage.svg)](https://github.com/pharmaverse/admiral/actions/workflows/code-coverage.yml)
+<!-- badges: end -->
+
+## Table of Contents
+
 - [Extension Expectations](#extension-expectations)
 - [What is included in the template](#what-is-included-in-the-template)
 - [Package Extension Guidance](#package-extension-guidance)
