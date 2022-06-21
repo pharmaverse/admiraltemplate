@@ -25,5 +25,4 @@
 #' @importFrom hms as_hms
 #' @importFrom lifecycle deprecate_warn deprecated deprecate_stop
 #' @importFrom admiral derive_var_ady
-#' @importFrom admiral.test admiral_ae admiral_dm
 "_PACKAGE"

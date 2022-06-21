@@ -2,8 +2,6 @@
 
 export(hello_admiral)
 importFrom(admiral,derive_var_ady)
-importFrom(admiral.test,admiral_ae)
-importFrom(admiral.test,admiral_dm)
 importFrom(assertthat,"on_failure<-")
 importFrom(assertthat,assert_that)
 importFrom(assertthat,is.number)
