@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ADaM in R Asset Library - xyz Extension • admiralext</title>
+<title>ADaM in R Asset Library - Extension • admiralext</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -19,7 +19,7 @@
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><!-- docsearch --><script src="docsearch.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous">
 <link href="docsearch.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script><meta property="og:title" content="ADaM in R Asset Library - xyz Extension">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script><meta property="og:title" content="ADaM in R Asset Library - Extension">
 <meta property="og:description" content='A toolbox for programming Clinical Data Standards Interchange Consortium
     (CDISC) compliant Analysis Data Model (ADaM) datasets in R. ADaM datasets are a
     mandatory part of any New Drug or Biologics License Application submitted to the
@@ -107,12 +107,18 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#admiral-package-extension-template-" class="anchor"></a>admiral package extension Template <img src="reference/figures/logo.png" align="right" width="200" style="margin-left:50px;">
 </h1></div>
+<!-- badges: start -->
+
+<div id="table-of-contents" class="section level2">
+<h2 class="hasAnchor">
+<a href="#table-of-contents" class="anchor"></a>Table of Contents</h2>
 <ul>
 <li><a href="#extension-expectations">Extension Expectations</a></li>
 <li><a href="#what-is-included-in-the-template">What is included in the template</a></li>
 <li><a href="#package-extension-guidance">Package Extension Guidance</a></li>
 <li><a href="#quick-start-guide-for-template">Quick Start Guide for Template</a></li>
 </ul>
+</div>
 <div id="extension-expectations" class="section level2">
 <h2 class="hasAnchor">
 <a href="#extension-expectations" class="anchor"></a>Extension Expectations</h2>
@@ -210,6 +216,8 @@
 </li>
 <li>Test out a dummy branch and do a Pull Request to ensure CI/CD works.</li>
 <li>Any clearly dummy files like <code>R/my_first_fcn.R</code> or <code>inst/templates/ad_adxx.R</code> can be updated or removed.</li>
+<li>Set up <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule">branch protections rules</a> for <code>main</code> and <code>devel</code>.</li>
+<li>Set up and assign admin and write rights in Settings/Collaborators for members of the repository.</li>
 </ol>
 </div>
 </div>
@@ -237,7 +245,16 @@
 </ul>
 </div>
 
-  </div>
+  <div class="dev-status">
+<h2>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://pharmaverse.org"><img src="http://pharmaverse.org/shields/admiral.svg"></a></li>
+<li><a href="https://CRAN.R-project.org/package=admiral"><img src="https://www.r-pkg.org/badges/version/admiral" alt="CRAN status"></a></li>
+<li><a href="https://github.com/pharmaverse/admiral/actions/workflows/R-CMD-check.yml"><img src="https://github.com/pharmaverse/admiral/actions/workflows/R-CMD-check.yml/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://github.com/pharmaverse/admiral/actions/workflows/code-coverage.yml"><img src="https://raw.githubusercontent.com/pharmaverse/admiral/badges/devel/test-coverage.svg" alt="Test Coverage"></a></li>
+</ul>
+</div>
+</div>
 </div>
 
 
