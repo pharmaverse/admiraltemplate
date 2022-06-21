@@ -75,21 +75,12 @@
     "admiral": {
       "Package": "admiral",
       "Version": "0.7.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "677963ed23698fabf4b9577c89c55266"
+      "Source": "Repository"
     },
     "admiral.test": {
       "Package": "admiral.test",
-      "Version": "0.1.0",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "pharmaverse",
-      "RemoteRepo": "admiral.test",
-      "RemoteRef": "main",
-      "RemoteSha": "bdae26a24aa2c1a2b4b12c1a0ab44308c6dc6ac9",
-      "Hash": "4edded9ff67ab05c59ffab7dfa73977a"
+      "Version": "0.2.0",
+      "Source": "Repository"
     },
     "askpass": {
       "Package": "askpass",
