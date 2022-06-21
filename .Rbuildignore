@@ -1,6 +1,7 @@
 ^renv$
 ^renv\.lock$
 ^.*\.Rproj$
+^.*\.lycheeignore$
 ^\.Rproj\.user$
 ^pkgdown$
 ^_pkgdown\.yml$
