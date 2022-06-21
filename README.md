@@ -1,4 +1,4 @@
-# admiral package extenstion Template <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
+# admiral package extension Template <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
 
 - [Extension Expectations](#extension-expectations)
 - [What is included in the template](#what-is-included-in-the-template)
@@ -49,7 +49,7 @@ _Note: The ordering numbers below are suggested but don’t all need to strictly
 1. Share company-specific implementations and specifications to be able to harmonize into your design strategy for the package extension. _Here it is important to remain pragmatic and consider a higher perspective than any one company. Engage your company standards representatives and where you find discrepancies across company approaches then question if you really need to be doing things differently here (do health authorities or patients benefit at all if you do?). Also consider that we always expect a level of company-specifics to be covered in the internal company package extensions._
 1. Set up a new public GitHub repo under the [pharmaverse org](https://github.com/pharmaverse) using template https://github.com/pharmaverse/admiraltemplate - this includes set-up pieces (such as CI/CD checks and issue/PR templates) that will enable your package to stay consistent with others in the admiral family, as well as the same core package dependencies and versions. _Note that this step requires org member access which could be granted by of the pharmaverse council reps, who are admins for this org. Also you are free to add additional package dependencies as needed assuming only reliable packages are used, but they must not depend on newer versions of other packages (always reply “no” if updates are suggested during installation)._
 1. Once the repo is available the technical lead could be granted admin access to this repo and then could set up a GitHub team to assign required access for all other co-development team members. Most will only require write access, but you may choose to give the other leads admin access as well so that never a bottle-neck waiting on one person.
-1. Add a license file to your repo - for `{admiral}` package extensions we use Apache 2.0, which is our preferred permissive license. Agree with the co-development companies the wording for the copyright/IP section.
+1. Update the template license file in your repo by adding the co-development company names in place of Roche & GSK - for `{admiral}` package extensions we use Apache 2.0, which is our preferred permissive license. Agree with the co-development companies any required extra wording for the copyright/IP section.
 1. Set up a project board, such as [link](https://github.com/pharmaverse/admiral/projects/1), to help manage your backlog.
 1. Assuming you work under agile/scrum, then create a product backlog, prioritise and make a sprint plan.
 1. The intention is always to re-use as much as possible from `{admiral}` core package. If you find anything additional needed for the package extension, you should first question whether it might be a common need for other TAs and if so consider instead raising an issue to `{admiral}` core. When designing new functions always try to stay aligned with the programming strategy: https://pharmaverse.github.io/admiral/articles/programming_strategy.html. 
@@ -57,13 +57,13 @@ _Note: The ordering numbers below are suggested but don’t all need to strictly
 1. Line up testers from your companies and others and set expectations around when you believe a stable version would be available for user testing. You can use the admiral Slack community to raise interest to get involved.
 1. Add a pharmaverse badge to your README: https://pharmaverse.org/contribute/badges/ - needs support from a pharmaverse council rep. 
 1. Raise an `{admiral}` repo issue to ensure your package extension site is linked from the core `{admiral}` site at https://pharmaverse.github.io/admiral/index.html#types-of-packages.
-1. It is important that the `{admiral}` family of packages keep to a similar release schedule and cadence, in order to ease adoption by our users and to give clear expectations. The `{admiral}` package cadence of releases is one every 3-4 months, and the core package will set the release schedule for the package extensions to follow, i.e. once `{admiral}` releases we'd expect package extension releases targeted within a 2 week window. These releases are communicated via our Slack channel as well as at our quarterly user community meetings.
+1. It is important that the `{admiral}` family of packages keep to a similar release schedule and cadence, in order to ease adoption by our users and to give clear expectations. The `{admiral}` core package cadence of releases is one every quarter on a fixed schedule (every first Friday of the last month of a quarter - March, June, September, December). The core package will set the release schedule for the package extensions to follow, i.e. once `{admiral}` releases we'd expect package extension releases targeted within a 2 week window. These releases are communicated via our Slack channel as well as at our quarterly user community meetings.
 1. Once you are happy your package extension has been well tested and is at a sufficient state then make a submission to CRAN. The technical lead should be named as maintainer. After the CRAN release, you should advertise this via Slack & LinkedIn.
 1. Plan any future further enhancements and make issues. When your team feels ready you can open up to development contributions for these from the wider community - see https://pharmaverse.github.io/admiral/articles/contribution_model.html. Please use the _“good first issue”_ (ideal for new starters) & _“help wanted”_ (ideal for more experienced contributors) issue labels.
 
 ## Quick Start Guide for Template 
 
-Please throughly read the Package Extension Guidance.  The intention of the Quick Start is to just get the template code into a new repo and check that the package works in your environment.  Please contact us via slack if any issues arise.
+Please thoroughly read the Package Extension Guidance above.  The intention of the Quick Start is to just get the template code into a new repo and check that the package works in your environment.  Please contact us via slack if any issues arise.
 
 1.  Click the Green 'Use this Template' Button.
 1.  Change owner to `pharmaverse` and enter your repository name
@@ -80,3 +80,4 @@ Please throughly read the Package Extension Guidance.  The intention of the Quic
 1.  Run `pkgdown::build_site()`
     -  Reach out to slack for help with creating a hex sticker/logo to replace pharmaverse logo
 1.  Test out a dummy branch and do a Pull Request to ensure CI/CD works.
+1.  Any clearly dummy files like `R/my_first_fcn.R` or `inst/templates/ad_adxx.R` can be updated or removed.

@@ -30,42 +30,10 @@ reference:
   - has_keyword('computation')
 
 - title: CDISC Hierarchy
-- subtitle: ADaM
-  desc: General functions which can be used for any ADaM dataset
+- subtitle: ADXX
+  desc: ADXX specific functions
   contents:
-  - has_keyword('adam')
-- subtitle: BDS
-  desc: BDS specific functions
-  contents:
-  - has_keyword('bds')
-- subtitle: OCCDS
-  desc: OCCDS specific functions
-  contents:
-  - has_keyword('occds')
-- subtitle: ADSL
-  desc: Functions specific for ADSL
-  contents:
-  - has_keyword('adsl')
-- subtitle: ADEG
-  desc: Functions specific for ADEG
-  contents:
-  - has_keyword('adeg')
-- subtitle: ADVS
-  desc: Functions specific for ADVS
-  contents:
-  - has_keyword('advs')
-- subtitle: ADEX
-  desc: Functions specific for ADEX
-  contents:
-  - has_keyword('adex')
-- subtitle: ADAE
-  desc: Functions specific for ADAE
-  contents:
-  - has_keyword('adae')
-- subtitle: ADCM
-  desc: Functions specific for ADCM
-  contents:
-  - has_keyword('adcm')
+  - has_keyword('adxx')
 
 - title: Other Keywords
 - subtitle: Timing
@@ -85,11 +53,7 @@ reference:
 
 - title: ADaM Datasets
 - contents:
-  - adae
-  - adcm
-  - adsl
-  - advs
-  - adex
+  - adxx
 
 - title: User Utilities
 - contents:
@@ -113,23 +77,4 @@ articles:
 - title: User Guides
   navbar: User Guides
   contents:
-  - admiral
-  - adsl
-  - occds
-  - bds_finding
-  - bds_exposure
-  - bds_tte
-  - imputation
-  - queries_dataset
-  - faq
-
-- title: Developer Guides
-  navbar: Developer Guides
-  contents:
-  - contribution_model
-  - development_process
-  - programming_strategy
-  - git_usage
-  - writing_vignettes
-  - pr_review_guidance
-  - unit_test_guidance
+  - adxx
