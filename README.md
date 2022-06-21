@@ -1,5 +1,14 @@
 # admiral package extension Template <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
 
+<!-- badges: start -->
+[<img src="http://pharmaverse.org/shields/admiral.svg">](https://pharmaverse.org)
+[![CRAN status](https://www.r-pkg.org/badges/version/admiral)](https://CRAN.R-project.org/package=admiral)
+[![R-CMD-check](https://github.com/pharmaverse/admiral/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/pharmaverse/admiral/actions/workflows/R-CMD-check.yml)
+[![Test Coverage](https://raw.githubusercontent.com/pharmaverse/admiral/badges/devel/test-coverage.svg)](https://github.com/pharmaverse/admiral/actions/workflows/code-coverage.yml)
+<!-- badges: end -->
+
+## Table of Contents
+
 - [Extension Expectations](#extension-expectations)
 - [What is included in the template](#what-is-included-in-the-template)
 - [Package Extension Guidance](#package-extension-guidance)
@@ -81,3 +90,6 @@ Please thoroughly read the Package Extension Guidance above.  The intention of t
     -  Reach out to slack for help with creating a hex sticker/logo to replace pharmaverse logo
 1.  Test out a dummy branch and do a Pull Request to ensure CI/CD works.
 1.  Any clearly dummy files like `R/my_first_fcn.R` or `inst/templates/ad_adxx.R` can be updated or removed.
+1.  Set up [branch protections rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
+for `main` and `devel`.
+1.  Set up and assign admin and write rights in Settings/Collaborators for members of the repository.

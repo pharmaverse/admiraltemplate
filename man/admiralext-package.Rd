@@ -4,7 +4,7 @@
 \name{admiralext-package}
 \alias{admiralext}
 \alias{admiralext-package}
-\title{admiralext: ADaM in R Asset Library - xyz Extension}
+\title{admiralext: ADaM in R Asset Library - Extension}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
