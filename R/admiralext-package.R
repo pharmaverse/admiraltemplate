@@ -24,6 +24,5 @@
 #' @importFrom tidyselect all_of contains vars_select
 #' @importFrom hms as_hms
 #' @importFrom lifecycle deprecate_warn deprecated deprecate_stop
-#' @importFrom admiral derive_var_ady
-#' @importFrom admiral.test admiral_ae admiral_dm
+#' @importFrom admiral derive_vars_dy
 "_PACKAGE"

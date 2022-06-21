@@ -90,3 +90,6 @@ Please thoroughly read the Package Extension Guidance above.  The intention of t
     -  Reach out to slack for help with creating a hex sticker/logo to replace pharmaverse logo
 1.  Test out a dummy branch and do a Pull Request to ensure CI/CD works.
 1.  Any clearly dummy files like `R/my_first_fcn.R` or `inst/templates/ad_adxx.R` can be updated or removed.
+1.  Set up [branch protections rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
+for `main` and `devel`.
+1.  Set up and assign admin and write rights in Settings/Collaborators for members of the repository.
