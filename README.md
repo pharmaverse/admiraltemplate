@@ -94,3 +94,4 @@ Please thoroughly read the Package Extension Guidance above.  The intention of t
 1.  Set up [branch protections rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
 for `main` and `devel`.
 1.  Set up and assign admin and write rights in Settings/Collaborators for members of the repository.
+1.  Change badges and hex image in `Readme.md` to your package.
