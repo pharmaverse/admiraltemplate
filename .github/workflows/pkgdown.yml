@@ -1,8 +1,11 @@
 on:
   workflow_dispatch:
+  workflow_call:
   push:
     branches:
       - main
+      - devel
+      - pre-release
 
 name: pkgdown
 

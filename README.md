@@ -76,6 +76,7 @@ Please thoroughly read the Package Extension Guidance above.  The intention of t
 
 1.  Click the Green 'Use this Template' Button.
 1.  Change owner to `pharmaverse` and enter your repository name
+1.  Create `devel` and `pre-release` branches.  These will be important later for workflows!
 1.  Once repo has been created click Green Code button and download the repo using `https` or `ssh`
 1.  Run `renv::restore()` - you will see a prompt and this will take a few minutes
      - This will ensure that your development environment for your extension package is        synced with other admiral packages
