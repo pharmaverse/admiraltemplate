@@ -51,8 +51,13 @@ jobs:
         env:
           BRANCH_NAME: "${{ steps.branch-name.outputs.current_branch }}"
 
-      - name: Commit and push README.md
+      - name: Install Markdown formatter
+        run: npm install -g @quilicicf/markdown-formatter
+        shell: bash
+
+      - name: Commit and push formatted README.md
         run: |
+          markdown-format -r -f README.md
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions"
           BRANCH=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}
