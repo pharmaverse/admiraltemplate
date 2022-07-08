@@ -202,7 +202,7 @@ strictly be followed in this sequence._
     similar release schedule and cadence, in order to ease adoption by
     our users and to give clear expectations. The `{admiral}` core
     package cadence of releases is one every quarter on a fixed schedule
-    (every first Friday of the last month of a quarter - March, June,
+    (every first Monday of the last month of a quarter - March, June,
     September, December). The core package will set the release schedule
     for the package extensions to follow, i.e. once `{admiral}` releases
     we’d expect package extension releases targeted within a 2 week
