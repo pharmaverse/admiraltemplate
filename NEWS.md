@@ -2,7 +2,7 @@
 
 ## New Features
 
-- You can link the GitHub Issue to Chagnelog by using (#ISSUE-NUMBER)
+- You can link the GitHub Issue to Changelog by using (#ISSUE-NUMBER)
 
 ## Updates of Existing Functions
 

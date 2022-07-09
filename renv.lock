@@ -690,7 +690,7 @@
     },
     "styler": {
       "Package": "styler",
-      "Version": "1.3.2",
+      "Version": "1.5.1",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "60b23effde8d08a56a64ebeb92a32749"

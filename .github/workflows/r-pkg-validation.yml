@@ -10,7 +10,7 @@ jobs:
     name: Create report 📃
     runs-on: ubuntu-latest
     container:
-      image: rocker/verse:4.2.0
+      image: rocker/verse:4.2.1
     # Set Github token permissions
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -20,10 +20,10 @@ jobs:
       deployments: write
     steps:
       - name: Checkout repo 🛎
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Build report 🏗
-        uses: insightsengineering/thevalidatoR@v1.2.1
+        uses: insightsengineering/thevalidatoR@v1
         with:
           name: validation_report.pdf
 

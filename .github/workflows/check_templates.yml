@@ -6,49 +6,51 @@ on:
 
 name: Check Templates
 
+concurrency:
+  group: templates-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   check_templates:
-    if: github.event.review.state == 'approved'
+    name: check_templates
+    if: >
+      github.event.review.state == 'approved'
+        && !contains(github.event.commits[0].message, '[skip check_templates]')
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      - uses: actions/cache@v2
-        with:
-          path: ~/.local/share/renv
-          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-renv-
+      - name: Get branch names 🌿
+        id: branch-name
+        uses: tj-actions/branch-names@v5
 
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - uses: r-lib/actions/setup-r@v1
         with:
           r-version: 3.6
 
-      - name: Query dependencies
-        run: |
-          install.packages('remotes')
-          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
-          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
-        shell: Rscript {0}
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.local/share/renv
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: ${{ runner.os }}-renv-
 
-      - name: Install system dependencies
-        run: |
-          while read -r cmd
-          do
-            eval sudo $cmd
-          done < <(Rscript -e 'writeLines(remotes::system_requirements("ubuntu", "20.04"))')
-
-      - name: Install dependencies
-        run: |
-          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-          renv::restore()
-        shell: Rscript {0}
+      - name: Run Staged dependencies 🎦
+        uses: insightsengineering/staged-dependencies-action@fix-sysdeps-installer
+        with:
+          run-system-dependencies: true
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+          SD_ENABLE_CHECK: false
+          SD_GIT_REF: ${{ steps.branch-name.outputs.head_ref_branch }}
 
       - name: Install package
-        run: R CMD INSTALL .
+        run: renv::install(".")
+        shell: Rscript {0}
 
       - name: Run Template Scripts
         run: |
