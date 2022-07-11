@@ -79,12 +79,12 @@ _Note: The ordering numbers below are suggested but don’t all need to
 strictly be followed in this sequence._
 
 1. Raise the need for a new `{admiral}` package extension with the
-   sponsors (Ross Farrugia <ross.farrugia@roche.com> & Lucy Hoch
-   <lucy.a.hoch@gsk.com>). The naming convention needs to be
-   `{admiralxxx}` and we request that the scope is not targeted overly
-   narrow, for example instead of a package extension for HIV we’d
-   prefer one across virology. Otherwise the number of packages may
-   become unmanageable.
+   sponsors (Ross Farrugia <a href="mailto:ross.farrugia@roche.com" class="email"><ross.farrugia@roche.com></a>
+   & Lucy Hoch <a href="mailto:lucy.a.hoch@gsk.com" class="email"><lucy.a.hoch@gsk.com></a>).
+   The naming convention needs to be `{admiralxxx}` and we request that
+   the scope is not targeted overly narrow, for example instead of a
+   package extension for HIV we’d prefer one across virology. Otherwise
+   the number of packages may become unmanageable.
 2. Once agreed, reach out to other company contacts working in similar
    areas to see if a collaborative development can be achieved. _Our
    recommendation here is always to target at least 2 companies to
@@ -150,17 +150,16 @@ strictly be followed in this sequence._
     company-specifics to be covered in the internal company package
     extensions._
 11. Set up a new public GitHub repo under the [pharmaverse
-    org](https://github.com/pharmaverse) using template
-    <https://github.com/pharmaverse/admiraltemplate> - this includes
-    set-up pieces (such as CI/CD checks and issue/PR templates) that
-    will enable your package to stay consistent with others in the
-    admiral family, as well as the same core package dependencies and
-    versions. _Note that this step requires org member access which
-    could be granted by of the pharmaverse council reps, who are admins
-    for this org. Also you are free to add additional package
-    dependencies as needed assuming only reliable packages are used, but
-    they must not depend on newer versions of other packages (always
-    reply “no” if updates are suggested during installation)._
+    org](https://github.com/pharmaverse) using template <a href="https://github.com/pharmaverse/admiraltemplate" class="uri"><https://github.com/pharmaverse/admiraltemplate></a> -
+    this includes set-up pieces (such as CI/CD checks and issue/PR
+    templates) that will enable your package to stay consistent with
+    others in the admiral family, as well as the same core package
+    dependencies and versions. _Note that this step requires org member
+    access which could be granted by of the pharmaverse council reps,
+    who are admins for this org. Also you are free to add additional
+    package dependencies as needed assuming only reliable packages are
+    used, but they must not depend on newer versions of other packages
+    (always reply “no” if updates are suggested during installation)._
 12. Once the repo is available the technical lead could be granted admin
     access to this repo and then could set up a GitHub team to assign
     required access for all other co-development team members. Most will
@@ -192,9 +191,8 @@ strictly be followed in this sequence._
     around when you believe a stable version would be available for user
     testing. You can use the admiral Slack community to raise interest
     to get involved.
-19. Add a pharmaverse badge to your README:
-    <https://pharmaverse.org/contribute/badges/> - needs support from a
-    pharmaverse council rep.
+19. Add a pharmaverse badge to your README: <a href="https://pharmaverse.org/contribute/badges/" class="uri"><https://pharmaverse.org/contribute/badges/></a> -
+    needs support from a pharmaverse council rep.
 20. Raise an `{admiral}` repo issue to ensure your package extension
     site is linked from the core `{admiral}` site
     [here.](https://pharmaverse.github.io/admiral/main/index.html#types-of-packages)
@@ -243,7 +241,7 @@ contact us via slack if any issues arise.
    * `testthat.R`
    * `News.md`
 7. Run `devtools::load_all()` and resolve issues
-8. Run `devtools::document()` and reolve issues
+8. Run `devtools::document()` and resolve issues
 9. Run `pkgdown::build_site()`
    * Reach out to slack for help with creating a hex sticker/logo to
      replace pharmaverse logo
