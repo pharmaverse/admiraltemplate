@@ -1,0 +1,66 @@
+name: Render README 👓
+
+on:
+  push:
+    branches:
+      - main
+      - devel
+      - pre-release
+    paths:
+      - README.Rmd
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  render:
+    name: Render 🛞
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Restore/populate cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.local/share/renv
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v1
+        with:
+          r-version: 3.6
+
+      - name: Setup Pandoc
+        uses: r-lib/actions/setup-pandoc@v1
+
+      - name: install required packages
+        run: if (file.exists("renv.lock")) renv::install("rmarkdown")
+        shell: Rscript {0}
+
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v5.2
+
+      - name: Render README to markdown
+        run: rmarkdown::render("README.Rmd", output_format = "md_document")
+        shell: Rscript {0}
+        env:
+          BRANCH_NAME: "${{ steps.branch-name.outputs.current_branch }}"
+
+      - name: Install Markdown formatter
+        run: npm install -g @quilicicf/markdown-formatter
+        shell: bash
+
+      - name: Commit and push formatted README.md
+        run: |
+          markdown-format -r -f README.md
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions"
+          BRANCH=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}
+          git add README.md
+          git commit -m "[actions skip] Add/Update README.md for ${BRANCH}" || true
+          git push origin ${BRANCH} || echo "No changes to commit"
