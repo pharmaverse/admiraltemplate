@@ -245,12 +245,15 @@ contact us via slack if any issues arise.
 9. Run `pkgdown::build_site()`
    * Reach out to slack for help with creating a hex sticker/logo to
      replace pharmaverse logo
-10. Test out a dummy branch and do a Pull Request to ensure CI/CD works.
-11. Any clearly dummy files like `R/my_first_fcn.R` or
+10. _Recommended_: Review the [documentation on the CI/CD
+    workflows](.github/workflows/README.md) for information about how to
+    reuse the workflows from this template.
+11. Test out a dummy branch and do a Pull Request to ensure CI/CD works.
+12. Any clearly dummy files like `R/my_first_fcn.R` or
     `inst/templates/ad_adxx.R` can be updated or removed.
-12. Set up [branch protections
+13. Set up [branch protections
     rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
     for `main` and `devel`.
-13. Set up and assign admin and write rights in Settings/Collaborators
+14. Set up and assign admin and write rights in Settings/Collaborators
     for members of the repository.
-14. Change badges and hex image in `Readme.md` to your package.
+15. Change badges and hex image in `Readme.md` to your package.

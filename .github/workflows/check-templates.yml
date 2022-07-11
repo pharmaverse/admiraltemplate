@@ -23,10 +23,12 @@ jobs:
       ##################### BEGIN boilerplate steps #####################
       - name: Get branch names 🌿
         id: branch-name
-        uses: tj-actions/branch-names@v5
+        uses: tj-actions/branch-names@v5.4
 
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          ref: ${{ steps.branch-name.outputs.head_ref_branch }}
 
       - uses: r-lib/actions/setup-r@v1
         with:
