@@ -43,7 +43,7 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v3
         with:
-          path: ~/.local/cache/renv
+          path: ~/.local/share/renv
           key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
           restore-keys: ${{ runner.os }}-renv-
 
