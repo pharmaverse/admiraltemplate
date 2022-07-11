@@ -29,6 +29,7 @@ jobs:
     outputs:
       coverage-percent: ${{ steps.set-coverage-percentage.outputs.coverage-percentage }}
     steps:
+      ##################### BEGIN boilerplate steps #####################
       - name: Get branch names 🌿
         id: branch-name
         uses: tj-actions/branch-names@v5
@@ -59,6 +60,7 @@ jobs:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
           SD_ENABLE_CHECK: false
           SD_GIT_REF: ${{ steps.branch-name.outputs.head_ref_branch }}
+      ##################### END boilerplate steps #####################
 
       - name: Install package
         run: renv::install(".")
