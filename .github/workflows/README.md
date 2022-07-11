@@ -13,7 +13,7 @@ Following the installation of system dependencies, R, and package dependencies, 
 
 ### [`check-templates.yml`](check-templates.yml)
 
-This workflow checks for templates.
+This workflow checks for issues within template scripts.  For example, in admiral package there are several template scripts with admiral-based functions showing how to build certain ADaM datasets.   As we update the admiral functions, we want to make sure these template scripts execute appropriately.  Functions in the template scripts that are deprecated or used inappropriately will cause this workflow to fail. 
 
 ### [`code-coverage.yml`](code-coverage.yml)
 
