@@ -5,7 +5,7 @@ Workflows defined here are responsible for assuring high package quality standar
 
 ## What these workflows do?
 
-Most workflows have a `BEGIN boilderplate steps` and `END boilderplate steps` section within them which define some standard steps required for installing system dependencies, R and R packages which serve as dependencies for the package.
+Most workflows have a `BEGIN boilderplate steps` and `END boilderplate steps` section within them which define some standard steps required for installing system dependencies, R version and R packages which serve as dependencies for the package.
 
 The underlying mechanisms for installing R and Pandoc are defined in [`r-lib/actions`][r-lib-actions], while the installation of system dependencies and R package dependencies is managed via the [Staged Dependencies GitHub Action][sd-action]. The latter is used in conjunction with the [`staged_dependencies.yaml`](../../staged_dependencies.yaml) file in order to install dependencies that are in the _same stage of development_ as the current package. You can read more about how it works [here](sd-repo). Note that the latter is not necesary for this workflow to work and is completely optional.
 
