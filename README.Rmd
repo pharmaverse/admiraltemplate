@@ -7,21 +7,21 @@ date: '2022-06-27'
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 link <- function(text, url) {
-    return(
-        paste0(
-            "[", text, "]",
-            "(", url, ")"
-        )
+  return(
+    paste0(
+      "[", text, "]",
+      "(", url, ")"
     )
+  )
 }
-dyn.link <- function(text, base_url, relative_url="") {
-    branch <- Sys.getenv("BRANCH_NAME", "main")
-    return(
-        link(
-            text,
-            paste(base_url, branch, relative_url, sep = "/")
-        )
+dyn.link <- function(text, base_url, relative_url = "") {
+  branch <- Sys.getenv("BRANCH_NAME", "main")
+  return(
+    link(
+      text,
+      paste(base_url, branch, relative_url, sep = "/")
     )
+  )
 }
 
 # Other variables
