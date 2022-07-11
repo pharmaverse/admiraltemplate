@@ -53,7 +53,7 @@ If your codebase uses a `README.Rmd` file], then this workflow will automaticall
 
 ### [`spellcheck.yml`](spellcheck.yml)
 
-Spellchecks are performed by this workflow, and the [`spelling`][spelling] R package is used to detect spelling mistakes. Failed workflows typically indicate misspelled words.
+Spellchecks are performed by this workflow, and the [`spelling`][spelling] R package is used to detect spelling mistakes. Failed workflows typically indicate misspelled words.  In the `inst/WORDLIST` file, you can add words and or acronyms that you want the spell check to ignore, for example occds is not an English word but a common acronym used within Pharma.  The workflow will flag this until a user adds it to the `inst/WORDLIST`.
 
 ### [`style.yml`](style.yml`)
 
