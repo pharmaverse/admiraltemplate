@@ -1,6 +1,7 @@
 name: R Package Validation report
 
 on:
+  workflow_dispatch:
   workflow_call:
   release:
     types: [published]
