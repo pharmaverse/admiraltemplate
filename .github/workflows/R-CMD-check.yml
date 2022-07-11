@@ -61,7 +61,7 @@ jobs:
           restore-keys: ${{ runner.os }}-r-${{ matrix.config.r }}
 
       - name: Run Staged dependencies 🎦
-        uses: insightsengineering/staged-dependencies-action@fix-sysdeps-installer
+        uses: insightsengineering/staged-dependencies-action@v1
         with:
           run-system-dependencies: true
         env:

@@ -52,7 +52,7 @@ jobs:
         uses: r-lib/actions/setup-pandoc@v1
 
       - name: Run Staged dependencies 🎦
-        uses: insightsengineering/staged-dependencies-action@fix-sysdeps-installer
+        uses: insightsengineering/staged-dependencies-action@v1
         with:
           run-system-dependencies: true
         env:
