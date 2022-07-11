@@ -130,7 +130,7 @@ strictly be followed in this sequence._
    `{admiral.test}` to check that the test data there is sufficient for
    your TA needs, e.g. for `{admiralonco}` we had to generate new test
    data for SDTM domains such as RS and TU. Note that no personal data
-   should be used here (even if anonymised) and it is important to keep
+   should be used here (even if anonymized) and it is important to keep
    any data generated in-line with the CDISC pilot data we use here,
    i.e. use same USUBJIDs as DM etc.
 9. Optionally draft, agree and sign a collaboration agreement if the
@@ -175,7 +175,7 @@ strictly be followed in this sequence._
     [link](https://github.com/pharmaverse/admiral/projects/1), to help
     manage your backlog.
 15. Assuming you work under agile/scrum, then create a product backlog,
-    prioritise and make a sprint plan.
+    prioritize and make a sprint plan.
 16. The intention is always to re-use as much as possible from
     `{admiral}` core package. If you find anything additional needed for
     the package extension, you should first question whether it might be
