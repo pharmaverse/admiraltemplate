@@ -1,6 +1,6 @@
 # GitHub Actions Workflows
 
-This directory contains GitHub Actions CI/CD workflows, most of which are also used by `admiral`'s extensions.
+This directory contains GitHub Actions Continuous integration/continuous delivery (CI/CD) workflows, most of which are also used by `admiral`'s extensions.
 Workflows defined here are responsible for assuring high package quality standards without compromising performance, security, or reproducibility.
 
 ## What these workflows do?
