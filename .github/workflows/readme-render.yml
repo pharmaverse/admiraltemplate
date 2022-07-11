@@ -21,7 +21,7 @@ jobs:
       ##################### BEGIN boilerplate steps #####################
       - name: Get branch names 🌿
         id: branch-name
-        uses: tj-actions/branch-names@v5
+        uses: tj-actions/branch-names@v5.4
 
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -48,7 +48,7 @@ jobs:
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
           SD_ENABLE_CHECK: false
-          SD_GIT_REF: ${{ steps.branch-name.outputs.head_ref_branch }}
+          SD_GIT_REF: ${{ steps.branch-name.outputs.current_branch }}
       ##################### END boilerplate steps #####################
 
       - name: Render README to markdown
