@@ -35,7 +35,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 2
           ref: ${{ steps.branch-name.outputs.base_ref_branch }}
 
       - name: Setup R 📊
@@ -62,25 +61,19 @@ jobs:
 
       - name: Get changed files 🗞
         id: changed-files
-        uses: tj-actions/changed-files@v17
+        uses: jitterbit/get-changed-files@v1
         with:
-          separator: ","
-          files: |
-            **.R
-            **.Rmd
-            **.Rnw
-            **.Rmarkdown
-            **.qmd
+          format: csv
 
       - name: Run styler 👟
         run: |
           changed_files <- unlist(strsplit(
-            "${{ steps.changed-files.outputs.all_changed_files }}",
+            "${{ steps.changed-files.outputs.all }}",
             split=","
           ))
           is_r_file <- function(x) {
               ext <- tools::file_ext(x)
-              ext %in% c("R", "Rmd", "Rnw", "Rmarkdown")
+              ext %in% c("R", "Rmd", "Rnw", "Rmarkdown", "qmd")
           }
           changed_r_files <- Filter(is_r_file, changed_files)
           detect <- styler::style_file(changed_r_files, dry = "on")
