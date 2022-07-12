@@ -36,6 +36,8 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          ref: ${{ steps.branch-name.outputs.head_ref_branch }}
 
       - name: Setup R 📊
         uses: r-lib/actions/setup-r@v1

@@ -34,6 +34,8 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          ref: ${{ steps.branch-name.outputs.head_ref_branch }}
 
       - name: Setup R 📊
         uses: r-lib/actions/setup-r@v1
@@ -54,7 +56,7 @@ jobs:
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
           SD_ENABLE_CHECK: false
-          SD_GIT_REF: ${{ steps.branch-name.outputs.current_branch }}
+          SD_GIT_REF: ${{ steps.branch-name.outputs.base_ref_branch }}
       ##################### END boilerplate steps #####################
 
       - name: Lint
