@@ -49,7 +49,7 @@ When a new release of the package is made, this workflow executes to create a va
 
 ### [`readme-render.yml`](readme-render.yml)
 
-If your codebase uses a `README.Rmd` file], then this workflow will automatically render a `README.md` and commit it to your branch.
+If your codebase uses a [`README.Rmd` file](../../README.Rmd), then this workflow will automatically render a `README.md` and commit it to your branch.
 
 ### [`spellcheck.yml`](spellcheck.yml)
 
