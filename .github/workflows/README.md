@@ -33,6 +33,12 @@ Static code analysis is performed by this workflow, which in turn uses the [`lin
 
 Any [`.lintr`](../../.lintr) configurations in the repository will be by this workflow.
 
+### [`man-pages.yml`](man-pages.yml)
+
+This workflow checks if the manual pages in the `man/` directory of the package are up-to-date with ROxygen comments in the code.
+
+Workflow failures indicate that the manual pages are not up-to-date with ROxygen comments, and corrective actions are provided in the workflow log.
+
 ### [`pkgdown.yml`](pkgdown.yml)
 
 Documentation for the R package is generated via this workflow. This workflow uses the [`pkgdown`](pkgdown) framework to generate documentation in HTML, and the HTML pages are deployed to the `gh-pages` branch.
