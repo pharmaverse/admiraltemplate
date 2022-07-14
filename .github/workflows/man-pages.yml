@@ -63,20 +63,20 @@ jobs:
         run: |
           logfile <- "roxygen_${{ github.event.repository.name }}.log"
           con <- file(logfile)
+          message("Executing roxygen2 to generage man pages")
           sink(con, append = TRUE, split = TRUE)
           sink(con, append = TRUE, type = "message")
-          message("Executing roxygen2 to generage man pages")
           roxygen2::roxygenize('.', roclets = c('rd', 'collate', 'namespace'))
           sink()
           sink(type = "message")
           logs <- readLines(logfile)
           error_marker <- grep("Error:", logs)
           if (length(error_marker) > 0) {
-            cat("☠ One or more errors were generated during the roxygen build:\n")
+            cat("☠ One or more errors were generated during the ROxygen build:\n")
             cat(logs[error_marker[[1]]:length(logs)], sep = "\n")
             stop("Please 🙏 fix the errors shown below this message 👇")
           }
-        shell: Rscript {0}
+        shell: Rscript --verbose {0}
 
       - name: Roxygen check 🅾
         if: "!startsWith(github.event.comment.body, '/roxygenize')"
