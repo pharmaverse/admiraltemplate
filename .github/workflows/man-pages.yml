@@ -65,6 +65,7 @@ jobs:
           con <- file(logfile)
           sink(con, append = TRUE, split = TRUE)
           sink(con, append = TRUE, type = "message")
+          message("Executing roxygen2 to generage man pages")
           roxygen2::roxygenize('.', roclets = c('rd', 'collate', 'namespace'))
           sink()
           sink(type = "message")
