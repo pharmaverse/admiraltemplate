@@ -44,3 +44,6 @@ vignettes/*.pdf
 admiralext.Rcheck/
 admiralext*.tar.gz
 admiralext*.tgz
+
+# MacOS
+.DS_Store
