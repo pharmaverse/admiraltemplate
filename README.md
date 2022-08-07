@@ -29,12 +29,12 @@ To be included as an `{admiral}` package extension we expect developers
 to adhere to the following standards:
 
 * [Code of
-  Conduct](https://pharmaverse.github.io/admiral//CODE_OF_CONDUCT.html)
-* [Manifesto](https://pharmaverse.github.io/admiral//index.html#admiral-manifesto)
+  Conduct](https://pharmaverse.github.io/admiral/main/CODE_OF_CONDUCT.html)
+* [Manifesto](https://pharmaverse.github.io/admiral/main/index.html#admiral-manifesto)
 * [Programming
-  strategy](https://pharmaverse.github.io/admiral//articles/programming_strategy.html)
+  strategy](https://pharmaverse.github.io/admiral/main/articles/programming_strategy.html)
 * [Development
-  process](https://pharmaverse.github.io/admiral//articles/development_process.html)
+  process](https://pharmaverse.github.io/admiral/main/articles/development_process.html)
 * Follow consistent workflow checks
 * A CRAN Release means 90% or greater test coverage
 
@@ -79,12 +79,12 @@ _Note: The ordering numbers below are suggested but don’t all need to
 strictly be followed in this sequence._
 
 1. Raise the need for a new `{admiral}` package extension with the
-   sponsors (Ross Farrugia <a href="mailto:ross.farrugia@roche.com" class="email"><ross.farrugia@roche.com></a>
-   & Lucy Hoch <a href="mailto:lucy.a.hoch@gsk.com" class="email"><lucy.a.hoch@gsk.com></a>).
-   The naming convention needs to be `{admiralxxx}` and we request that
-   the scope is not targeted overly narrow, for example instead of a
-   package extension for HIV we’d prefer one across virology. Otherwise
-   the number of packages may become unmanageable.
+   sponsors (Ross Farrugia <ross.farrugia@roche.com> & Lucy Hoch
+   <lucy.a.hoch@gsk.com>). The naming convention needs to be
+   `{admiralxxx}` and we request that the scope is not targeted overly
+   narrow, for example instead of a package extension for HIV we’d
+   prefer one across virology. Otherwise the number of packages may
+   become unmanageable.
 2. Once agreed, reach out to other company contacts working in similar
    areas to see if a collaborative development can be achieved. _Our
    recommendation here is always to target at least 2 companies to
@@ -118,7 +118,7 @@ strictly be followed in this sequence._
    they should join using this
    [link](https://join.slack.com/t/pharmaverse/shared_invite/zt-yv5atkr4-Np2ytJ6W_QKz_4Olo7Jo9A)).
    All should read up on the admiral
-   [site](https://pharmaverse.github.io/admiral//), especially the
+   [site](https://pharmaverse.github.io/admiral/main/), especially the
    developer guides which all need to be followed for package
    extensions.
 6. Optionally it can be useful to host a kick-off meeting to decide how
@@ -150,22 +150,24 @@ strictly be followed in this sequence._
     company-specifics to be covered in the internal company package
     extensions._
 11. Set up a new public GitHub repo under the [pharmaverse
-    org](https://github.com/pharmaverse) using template <a href="https://github.com/pharmaverse/admiraltemplate" class="uri"><https://github.com/pharmaverse/admiraltemplate></a> -
-    this includes set-up pieces (such as CI/CD checks and issue/PR
-    templates) that will enable your package to stay consistent with
-    others in the admiral family, as well as the same core package
-    dependencies and versions. _Note that this step requires org member
-    access which could be granted by of the pharmaverse council reps,
-    who are admins for this org. Also you are free to add additional
-    package dependencies as needed assuming only reliable packages are
-    used, but they must not depend on newer versions of other packages
-    (always reply “no” if updates are suggested during installation)._
+    org](https://github.com/pharmaverse) using template
+    <https://github.com/pharmaverse/admiraltemplate> - this includes
+    set-up pieces (such as CI/CD checks and issue/PR templates) that
+    will enable your package to stay consistent with others in the
+    admiral family, as well as the same core package dependencies and
+    versions. See Quick Start Guide for Template section below for
+    instructions. _Note that this step requires org member access which
+    could be granted by of the pharmaverse council reps, who are admins
+    for this org. Also you are free to add additional package
+    dependencies as needed assuming only reliable packages are used, but
+    they must not depend on newer versions of other packages (always
+    reply “no” if updates are suggested during installation)._
 12. Once the repo is available the technical lead could be granted admin
-    access to this repo and then could set up a GitHub team to assign
-    required access for all other co-development team members. Most will
-    only require write access, but you may choose to give the other
-    leads admin access as well so that never a bottle-neck waiting on
-    one person.
+    access to this repo and then could set up a GitHub team with the
+    same name as the package extension to assign required access for all
+    other co-development team members. Most will only require write
+    access, but you may choose to give the other leads admin access as
+    well so that never a bottle-neck waiting on one person.
 13. Update the template license file in your repo by adding the
     co-development company names in place of Roche & GSK - for
     `{admiral}` package extensions we use Apache 2.0, which is our
@@ -182,20 +184,21 @@ strictly be followed in this sequence._
     a common need for other TAs and if so consider instead raising an
     issue to `{admiral}` core. When designing new functions always try
     to stay aligned with the [programming
-    strategy.](https://pharmaverse.github.io/admiral//articles/programming_strategy.html).
+    strategy.](https://pharmaverse.github.io/admiral/main/articles/programming_strategy.html).
 17. Start development of your foundational first release 0.1.0. Follow a
     consistent [development
-    process](https://pharmaverse.github.io/admiral//articles/development_process.html)
+    process](https://pharmaverse.github.io/admiral/main/articles/development_process.html)
     to `{admiral}`.
 18. Line up testers from your companies and others and set expectations
     around when you believe a stable version would be available for user
     testing. You can use the admiral Slack community to raise interest
     to get involved.
-19. Add a pharmaverse badge to your README: <a href="https://pharmaverse.org/contribute/badges/" class="uri"><https://pharmaverse.org/contribute/badges/></a> -
-    needs support from a pharmaverse council rep.
+19. Add a pharmaverse badge to your README:
+    <https://pharmaverse.org/contribute/badges/> - needs support from a
+    pharmaverse council rep.
 20. Raise an `{admiral}` repo issue to ensure your package extension
     site is linked from the core `{admiral}` site
-    [here.](https://pharmaverse.github.io/admiral//index.html#types-of-packages)
+    [here.](https://pharmaverse.github.io/admiral/main/index.html#types-of-packages)
 21. It is important that the `{admiral}` family of packages keep to a
     similar release schedule and cadence, in order to ease adoption by
     our users and to give clear expectations. The `{admiral}` core
@@ -213,7 +216,7 @@ strictly be followed in this sequence._
 23. Plan any future further enhancements and make issues. When your team
     feels ready you can open up to development contributions for these
     from the wider community - see [this
-    page.](https://pharmaverse.github.io/admiral//articles/contribution_model.html).
+    page.](https://pharmaverse.github.io/admiral/main/articles/contribution_model.html).
     Please use the _“good first issue”_ (ideal for new starters) &
     _“help wanted”_ (ideal for more experienced contributors) issue
     labels.
@@ -246,8 +249,11 @@ contact us via slack if any issues arise.
    * Reach out to slack for help with creating a hex sticker/logo to
      replace pharmaverse logo
 10. _Recommended_: Review the [documentation on the CI/CD
-    workflows](.github/workflows/README.md) for information about how to
-    reuse the workflows from this template.
+    workflows](https://github.com/pharmaverse/admiralci) for information
+    about how to reuse the workflows from this template. Pay special
+    attention to the section on creating the `badges` orphan branch in
+    [this
+    section](https://github.com/pharmaverse/admiralci#code-coverageyml).
 11. Test out a dummy branch and do a Pull Request to ensure CI/CD works.
 12. Any clearly dummy files like `R/my_first_fcn.R` or
     `inst/templates/ad_adxx.R` can be updated or removed.
@@ -256,5 +262,6 @@ contact us via slack if any issues arise.
     for `main`, `devel`, and optionally for `pre-release` and `test`
     depending on your branching strategy.
 14. Set up and assign admin and write rights in Settings/Collaborators
-    for members of the repository.
+    for members of the repository - using a GitHub team for all
+    developers.
 15. Change badges and hex image in `Readme.md` to your package.
