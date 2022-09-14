@@ -30,9 +30,9 @@ to adhere to the following standards:
     Conduct](https://pharmaverse.github.io/admiral/CODE_OF_CONDUCT.html)
 -   [Manifesto](https://pharmaverse.github.io/admiral/index.html#admiral-manifesto)
 -   [Programming
-    strategy](https://pharmaverse.github.io/admiral/articles/programming_strategy.html)
+    strategy](https://pharmaverse.github.io/admiraldev/devel/articles/programming_strategy)
 -   [Development
-    process](https://pharmaverse.github.io/admiral/articles/development_process.html)
+    process](https://pharmaverse.github.io/admiraldev/devel/articles/development_process.html)
 -   Follow consistent workflow checks
 -   A CRAN Release means 90% or greater test coverage
 
