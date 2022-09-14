@@ -37,9 +37,7 @@ admiral_homepage <- "https://pharmaverse.github.io/admiral"
 
 <!-- Please do not edit the README.md file as it is auto-generated. Only edit the README.Rmd file -->
 
-# admiral package extension Template
-
-<img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
+# admiral package extension Template <img src="man/figures/logo.png" align="right" width="200" style="margin-left:50px;"/>
 
 <!-- badges: start -->
 [<img src="http://pharmaverse.org/shields/admiral.svg">](https://pharmaverse.org)
@@ -86,7 +84,7 @@ The repository template includes the following:
 
 _Note: The ordering numbers below are suggested but don’t all need to strictly be followed in this sequence._
 
-1. Raise the need for a new `{admiral}` package extension with the sponsors (Ross Farrugia ross.farrugia@roche.com & Lucy Hoch lucy.a.hoch@gsk.com). The naming convention needs to be `{admiralxxx}` and we request that the scope is not targeted overly narrow, for example instead of a package extension for HIV we'd prefer one across virology. Otherwise the number of packages may become unmanageable.
+1. Raise the need for a new `{admiral}` package extension with the sponsors (Ross Farrugia ross.farrugia@roche.com & Ben Arancibia benjamin.c.arancibia@gsk.com). The naming convention needs to be `{admiralxxx}` and we request that the scope is not targeted overly narrow, for example instead of a package extension for HIV we'd prefer one across virology. Otherwise the number of packages may become unmanageable.
 1. Once agreed, reach out to other company contacts working in similar areas to see if a collaborative development can be achieved. _Our recommendation here is always to target at least 2 companies to start so that any implementation remains robust and we protect from going down a company-specific route. However, consider that if more than 4 or 5 companies get involved too early it may slow down decision-making._
 1. From the companies that agree to co-develop, identify a lead from each. One company should act as the driver for the overall package extension and put forward a product owner and technical lead who ultimately have final say on any contentious decisions. The product owner would cover project decisions (e.g. around scope and priorities), whereas the technical lead would cover technical decisions (e.g. around design and implementation). _Ideally, the technical lead should have had some earlier involvement in `{admiral}` such as being part of the core development team or as a contributor, as this is a key role in order to keep the design true to the manifesto._
 1. Agree on a charter and expectations of each company, e.g. we usually ask for at least 3 developers with at least 25% capacity and a mix of R, GitHub and TA experience. Within the charter make sure the scope and timelines are clear. _It is important here not to try to boil the ocean. Focus first on the very common endpoints required as a foundation and then the package can build up from here via contributions from both the co-development companies and also the wider across-industry admiral community. If useful, the `{admiralonco}` charter could be shared as a guide._
