@@ -24,7 +24,5 @@ hello_admiral(hw = FALSE)
 \author{
 Open Source
 }
-\keyword{ADaM}
-\keyword{derivation}
-\keyword{hello}
-\keyword{timing}
+\concept{der_adxx}
+\keyword{der_adxx}

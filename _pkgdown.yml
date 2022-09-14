@@ -11,70 +11,57 @@ repo:
     issue: https://github.com/pharmaverse/admiraltemplate/issues/
     user: https://github.com/
 news:
-  cran_dates: false
+  cran_dates: true
 reference:
-- title: Hello and Welcome
-- subtitle: Hello
-  desc: General example functions
-  contents:
-  - has_keyword('hello')
-- title: Derivations
-  desc: Derivations add one or more variables or parameters to the input
-        dataset and return the extended dataset.
+
+- title: Derivations for Adding Variables
+- subtitle: ADXX-specific
+  desc: Derivation Functions helpful for building the ADXX dataset
 - contents:
-  - starts_with("derive")
+  - has_keyword("der_adxx")
 
-- title: Computations
-  desc: Computations expect vectors as input and return a vector
-  contents:
-  - has_keyword('computation')
-
-- title: CDISC Hierarchy
-- subtitle: ADXX
-  desc: ADXX specific functions
-  contents:
-  - has_keyword('adxx')
-
-- title: Other Keywords
-- subtitle: Timing
-  desc: Function related to timing, e.g., deriving dates, imputing dates, converting dates, deriving duration, ...
-  contents:
-  - has_keyword('timing')
-
-- subtitle: Source Specifications
-  desc: Classes defining sources for derivations where variables or observations from more than one dataset are considered, e.g., like in `derive_var_lstalvdt()`
-  contents:
-  - has_keyword('source_specifications')
-
-- subtitle: Pre-Defined Time-to-Event Sources
-  desc: '`tte_source` objects defined by {admiral} that can be used as input for `derive_param_tte()`'
-  contents:
-  - has_keyword('tte_source')
-
-- title: ADaM Datasets
+- title: Derivations for Adding Parameters
+- subtitle: ADXX-specific
+  desc: Parameter Derivation Functions helpful for building the ADXX dataset
 - contents:
-  - adxx
+  - has_keyword("der_prm_adxx")
 
-- title: User Utilities
+- title: Advanced Functions
+- subtitle: Pre-Defined Source Objects
+  desc: Source objects defined by {admiralext}
 - contents:
-  - has_keyword("user_utility")
+  - has_keyword("source_specifications")
 
-- title: Developer Utilities
-- subtitle: Assertions
+- title: Utility Functions
+- subtitle: Utilities for Formatting Observations
 - contents:
-  - has_keyword("assertion")
-- subtitle: Checks
-- contents:
-  - has_keyword("check")
-- subtitle: Warnings
-- contents:
-  - has_keyword("warning")
-- subtitle: Various
-- contents:
-  - has_keyword("dev_utility")
+  - has_keyword('utils_fmt')
 
-articles:
-- title: User Guides
-  navbar: User Guides
-  contents:
-  - adxx
+- subtitle: Utilities for Dataset Checking
+- contents:
+  - has_keyword('utils_ds_chk')
+
+- subtitle: Utilities for Filtering Observations
+- contents:
+  - has_keyword('utils_fil')
+
+- title: Example Datasets
+  desc: You can run `admiral::use_ad_template()` to produce additional datasets
+- contents:
+  - has_keyword('datasets')
+
+navbar:
+  structure:
+    left: [getstarted, reference, articles, news]
+  components:
+    getstarted:
+      text: Get Started
+      href: articles/admiralext.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    articles:
+      text: User Guides
+      menu:
+      - text: Creating ADXX
+        href: articles/adxx.html
