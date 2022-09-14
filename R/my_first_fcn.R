@@ -10,9 +10,9 @@
 #'
 #' @return Happy Message
 #'
-#' @family der_prm_adxx
+#' @family der_adxx
 #'
-#' @keywords der_prm_adxx
+#' @keywords der_adxx
 #'
 #' @export
 #'
