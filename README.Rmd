@@ -60,8 +60,8 @@ To be included as an `{admiral}` package extension we expect developers to adher
 
 * `r dyn_link("Code of Conduct", admiral_homepage, "CODE_OF_CONDUCT.html")`
 * `r dyn_link("Manifesto", admiral_homepage, "index.html#admiral-manifesto")`
-* `r dyn_link("Programming strategy", admiral_homepage, "articles/programming_strategy.html")`
-* `r dyn_link("Development process", admiral_homepage, "articles/development_process.html")`
+* [Programming strategy](https://pharmaverse.github.io/admiraldev/main/articles/programming_strategy)
+* [Development process](https://pharmaverse.github.io/admiraldev/main/articles/development_process.html)
 * Follow consistent workflow checks
 * A CRAN Release means 90% or greater test coverage
 
