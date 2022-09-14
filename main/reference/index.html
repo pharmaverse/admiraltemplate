@@ -18,25 +18,21 @@
     </button>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
-      <ul class="navbar-nav me-auto"><li class="active nav-item">
+      <ul class="navbar-nav me-auto"><li class="nav-item">
+  <a class="nav-link" href="../articles/admiralext.html">Get Started</a>
+</li>
+<li class="active nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <h6 class="dropdown-header" data-toc-skip>User Guides</h6>
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-user-guides">User Guides</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-user-guides">
     <a class="dropdown-item" href="../articles/adxx.html">Creating ADXX</a>
   </div>
 </li>
 <li class="nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
-<!-- start dropdown for versions --> <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown" role="button"
-          aria-expanded="false" aria-haspopup="true"
-          id="dropdown-versions">Versions</a> <div class="dropdown-menu" aria-labelledby="dropdown-versions"> <a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/admiraltemplate/main">main</a> </div></li>
-<!-- end dropdown for versions -->
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
@@ -57,15 +53,15 @@
     </div>
 
     <div class="section level2">
-      <h2 id="hello-and-welcome">Hello and Welcome<a class="anchor" aria-label="anchor" href="#hello-and-welcome"></a></h2>
+      <h2 id="derivations-for-adding-variables">Derivations for Adding Variables<a class="anchor" aria-label="anchor" href="#derivations-for-adding-variables"></a></h2>
       
       
 
       
     </div><div class="section level2">
       
-      <h3 id="hello">Hello<a class="anchor" aria-label="anchor" href="#hello"></a></h3>
-      <p class="section-desc"></p><p>General example functions</p>
+      <h3 id="adxx-specific">ADXX-specific<a class="anchor" aria-label="anchor" href="#adxx-specific"></a></h3>
+      <p class="section-desc"></p><p>Derivation Functions helpful for building the ADXX dataset</p>
 
       
     </div><div id="" class="section level2">
@@ -79,9 +75,15 @@
         </dt>
         <dd>Derive Extension Example</dd>
       </dl></div><div class="section level2">
-      <h2 id="derivations">Derivations<a class="anchor" aria-label="anchor" href="#derivations"></a></h2>
+      <h2 id="derivations-for-adding-parameters">Derivations for Adding Parameters<a class="anchor" aria-label="anchor" href="#derivations-for-adding-parameters"></a></h2>
       
-      <p class="section-desc"></p><p>Derivations add one or more variables or parameters to the input dataset and return the extended dataset.</p>
+      
+
+      
+    </div><div class="section level2">
+      
+      <h3 id="adxx-specific-1">ADXX-specific<a class="anchor" aria-label="anchor" href="#adxx-specific-1"></a></h3>
+      <p class="section-desc"></p><p>Parameter Derivation Functions helpful for building the ADXX dataset</p>
 
       
     </div><div id="" class="section level2">
@@ -91,9 +93,15 @@
 
       
     </div><div class="section level2">
-      <h2 id="computations">Computations<a class="anchor" aria-label="anchor" href="#computations"></a></h2>
+      <h2 id="advanced-functions">Advanced Functions<a class="anchor" aria-label="anchor" href="#advanced-functions"></a></h2>
       
-      <p class="section-desc"></p><p>Computations expect vectors as input and return a vector</p>
+      
+
+      
+    </div><div class="section level2">
+      
+      <h3 id="pre-defined-source-objects">Pre-Defined Source Objects<a class="anchor" aria-label="anchor" href="#pre-defined-source-objects"></a></h3>
+      <p class="section-desc"></p><p>Source objects defined by {admiralext}</p>
 
       
     </div><div id="" class="section level2">
@@ -103,102 +111,14 @@
 
       
     </div><div class="section level2">
-      <h2 id="cdisc-hierarchy">CDISC Hierarchy<a class="anchor" aria-label="anchor" href="#cdisc-hierarchy"></a></h2>
+      <h2 id="utility-functions">Utility Functions<a class="anchor" aria-label="anchor" href="#utility-functions"></a></h2>
       
       
 
       
     </div><div class="section level2">
       
-      <h3 id="adxx">ADXX<a class="anchor" aria-label="anchor" href="#adxx"></a></h3>
-      <p class="section-desc"></p><p>ADXX specific functions</p>
-
-      
-    </div><div id="" class="section level2">
-      
-      
-      
-
-      
-    </div><div class="section level2">
-      <h2 id="other-keywords">Other Keywords<a class="anchor" aria-label="anchor" href="#other-keywords"></a></h2>
-      
-      
-
-      
-    </div><div class="section level2">
-      
-      <h3 id="timing">Timing<a class="anchor" aria-label="anchor" href="#timing"></a></h3>
-      <p class="section-desc"></p><p>Function related to timing, e.g., deriving dates, imputing dates, converting dates, deriving duration, …</p>
-
-      
-    </div><div id="" class="section level2">
-      
-      
-      
-
-      <dl><dt>
-          
-          <code><a href="hello_admiral.html">hello_admiral()</a></code> 
-        </dt>
-        <dd>Derive Extension Example</dd>
-      </dl></div><div class="section level2">
-      
-      <h3 id="source-specifications">Source Specifications<a class="anchor" aria-label="anchor" href="#source-specifications"></a></h3>
-      <p class="section-desc"></p><p>Classes defining sources for derivations where variables or observations from more than one dataset are considered, e.g., like in <code>derive_var_lstalvdt()</code></p>
-
-      
-    </div><div id="" class="section level2">
-      
-      
-      
-
-      
-    </div><div class="section level2">
-      
-      <h3 id="pre-defined-time-to-event-sources">Pre-Defined Time-to-Event Sources<a class="anchor" aria-label="anchor" href="#pre-defined-time-to-event-sources"></a></h3>
-      <p class="section-desc"></p><p><code>tte_source</code> objects defined by {admiral} that can be used as input for <code>derive_param_tte()</code></p>
-
-      
-    </div><div id="" class="section level2">
-      
-      
-      
-
-      
-    </div><div class="section level2">
-      <h2 id="adam-datasets">ADaM Datasets<a class="anchor" aria-label="anchor" href="#adam-datasets"></a></h2>
-      
-      
-
-      
-    </div><div id="" class="section level2">
-      
-      
-      
-
-      
-    </div><div class="section level2">
-      <h2 id="user-utilities">User Utilities<a class="anchor" aria-label="anchor" href="#user-utilities"></a></h2>
-      
-      
-
-      
-    </div><div id="" class="section level2">
-      
-      
-      
-
-      
-    </div><div class="section level2">
-      <h2 id="developer-utilities">Developer Utilities<a class="anchor" aria-label="anchor" href="#developer-utilities"></a></h2>
-      
-      
-
-      
-    </div><div class="section level2">
-      
-      <h3 id="assertions">Assertions<a class="anchor" aria-label="anchor" href="#assertions"></a></h3>
+      <h3 id="utilities-for-formatting-observations">Utilities for Formatting Observations<a class="anchor" aria-label="anchor" href="#utilities-for-formatting-observations"></a></h3>
       
 
       
@@ -210,7 +130,7 @@
       
     </div><div class="section level2">
       
-      <h3 id="checks">Checks<a class="anchor" aria-label="anchor" href="#checks"></a></h3>
+      <h3 id="utilities-for-dataset-checking">Utilities for Dataset Checking<a class="anchor" aria-label="anchor" href="#utilities-for-dataset-checking"></a></h3>
       
 
       
@@ -222,7 +142,7 @@
       
     </div><div class="section level2">
       
-      <h3 id="warnings">Warnings<a class="anchor" aria-label="anchor" href="#warnings"></a></h3>
+      <h3 id="utilities-for-filtering-observations">Utilities for Filtering Observations<a class="anchor" aria-label="anchor" href="#utilities-for-filtering-observations"></a></h3>
       
 
       
@@ -233,9 +153,9 @@
 
       
     </div><div class="section level2">
+      <h2 id="example-datasets">Example Datasets<a class="anchor" aria-label="anchor" href="#example-datasets"></a></h2>
       
-      <h3 id="various">Various<a class="anchor" aria-label="anchor" href="#various"></a></h3>
-      
+      <p class="section-desc"></p><p>You can run <code><a href="https://pharmaverse.github.io/admiral/reference/use_ad_template.html" class="external-link">admiral::use_ad_template()</a></code> to produce additional datasets</p>
 
       
     </div><div id="" class="section level2">
