@@ -10,7 +10,9 @@
 #'
 #' @return Happy Message
 #'
-#' @keywords hello derivation ADaM timing
+#' @family der_prm_adxx
+#'
+#' @keywords der_prm_adxx
 #'
 #' @export
 #'
