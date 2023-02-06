@@ -27,8 +27,8 @@ To be included as an `{admiral}` package extension we expect developers
 to adhere to the following standards:
 
 -   [Code of
-    Conduct](https://pharmaverse.github.io/admiral/CODE_OF_CONDUCT.html)
--   [Manifesto](https://pharmaverse.github.io/admiral/index.html#admiral-manifesto)
+    Conduct](https://pharmaverse.github.io/admiral/cran-release/CODE_OF_CONDUCT.html)
+-   [Manifesto](https://pharmaverse.github.io/admiral/cran-release/index.html#admiral-manifesto)
 -   [Programming
     strategy](https://pharmaverse.github.io/admiraldev/devel/articles/programming_strategy)
 -   [Development
@@ -116,7 +116,7 @@ strictly be followed in this sequence.*
     they should join using this
     [link](https://join.slack.com/t/pharmaverse/shared_invite/zt-yv5atkr4-Np2ytJ6W_QKz_4Olo7Jo9A)).
     All should read up on the admiral
-    [site](https://pharmaverse.github.io/admiral/), especially the
+    [site](https://pharmaverse.github.io/admiral/cran-release/), especially the
     developer guides which all need to be followed for package
     extensions.
 6.  Optionally it can be useful to host a kick-off meeting to decide how
@@ -182,10 +182,10 @@ strictly be followed in this sequence.*
     a common need for other TAs and if so consider instead raising an
     issue to `{admiral}` core. When designing new functions always try
     to stay aligned with the [programming
-    strategy.](https://pharmaverse.github.io/admiral/articles/programming_strategy.html).
+    strategy.](https://pharmaverse.github.io/admiral/cran-release/articles/programming_strategy.html).
 17. Start development of your foundational first release 0.1.0. Follow a
     consistent [development
-    process](https://pharmaverse.github.io/admiral/articles/development_process.html)
+    process](https://pharmaverse.github.io/admiral/cran-release/articles/development_process.html)
     to `{admiral}`.
 18. Line up testers from your companies and others and set expectations
     around when you believe a stable version would be available for user
@@ -196,7 +196,7 @@ strictly be followed in this sequence.*
     pharmaverse council rep.
 20. Raise an `{admiral}` repo issue to ensure your package extension
     site is linked from the core `{admiral}` site
-    [here.](https://pharmaverse.github.io/admiral/index.html#types-of-packages)
+    [here.](https://pharmaverse.github.io/admiral/cran-release/index.html#types-of-packages)
 21. It is important that the `{admiral}` family of packages keep to a
     similar release schedule and cadence, in order to ease adoption by
     our users and to give clear expectations. The `{admiral}` core
@@ -214,7 +214,7 @@ strictly be followed in this sequence.*
 23. Plan any future further enhancements and make issues. When your team
     feels ready you can open up to development contributions for these
     from the wider community - see [this
-    page.](https://pharmaverse.github.io/admiral/articles/contribution_model.html).
+    page.](https://pharmaverse.github.io/admiral/cran-release/articles/contribution_model.html).
     Please use the *“good first issue”* (ideal for new starters) &
     *“help wanted”* (ideal for more experienced contributors) issue
     labels.
