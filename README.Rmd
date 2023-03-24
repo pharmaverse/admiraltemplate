@@ -59,8 +59,8 @@ admiraldev_homepage <- "https://pharmaverse.github.io/admiraldev"
 
 To be included as an `{admiral}` package extension we expect developers to adhere to the following standards:
 
-* `r dyn_link("Code of Conduct", admiral_homepage, "CODE_OF_CONDUCT.html")`
-* `r dyn_link("Manifesto", admiral_homepage, "index.html#admiral-manifesto")`
+* [Code of Conduct](https://pharmaverse.github.io/admiral/main/CODE_OF_CONDUCT.html)
+* [Manifesto](https://pharmaverse.github.io/admiral/main/index.html?q=manifest#admiral-manifesto)
 * [Programming strategy](https://pharmaverse.github.io/admiraldev/main/articles/programming_strategy.html)
 * [Development process](https://pharmaverse.github.io/admiraldev/main/articles/development_process.html)
 * Follow consistent workflow checks
