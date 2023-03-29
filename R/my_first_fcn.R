@@ -6,7 +6,7 @@
 #'
 #' @author Open Source
 #'
-#' @details Below this in the roxygen documentation you will find tags for family and keywords.
+#' @details In the roxygen documentation you will find tags for family and keywords.
 #' This is to create organized sections for the Reference tab on the pkgdown website.
 #' You can modify the `_pkgdown.yml` as necessary to create appropriate sections as necessary.
 #' Under `./man/roxygen/meta.R`, you will find where to store these family/keywords.
