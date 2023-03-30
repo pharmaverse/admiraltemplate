@@ -227,7 +227,7 @@ intention of the Quick Start is to just get the template code into a new
 repo and check that the package works in your environment. Please
 contact us via slack if any issues arise.
 
-1.  Click the Green ‘Use this Template’ Button.
+1.  Click the Green `Use this Template` Button.
 2.  Change owner to `pharmaverse` and enter your repository name
 3.  Create `devel` and `pre-release` branches. These will be important
     later for workflows!
