@@ -229,8 +229,8 @@ contact us via slack if any issues arise.
 
 1.  Click the Green `Use this Template` Button.
 2.  Change owner to `pharmaverse` and enter your repository name
-3.  Create `devel` and `pre-release` branches. These will be important
-    later for workflows!
+3.  Create `devel` and `patch` branches. These will be important later
+    for workflows!
 4.  Once repo has been created click Green Code button and download the
     repo using `https` or `ssh`
 5.  Run `renv::restore()` - you will see a prompt and this will take a
