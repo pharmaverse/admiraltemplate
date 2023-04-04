@@ -1,8 +1,22 @@
+# admiralext 0.0.2
+
+## New Features
+
+## Updates of Existing Functions
+
+## Breaking Changes
+
+## Documentation
+
+ - Updates across documentation made to match v0.10.0 of `admiral` (#48)
+
+## Various
+
 # admiralext 0.0.1
 
 ## New Features
 
-- You can link the GitHub Issue to Changelog by using (#ISSUE-NUMBER)
+ - You can link the GitHub Issue to Changelog by using (#ISSUE-NUMBER)
 
 ## Updates of Existing Functions
 
