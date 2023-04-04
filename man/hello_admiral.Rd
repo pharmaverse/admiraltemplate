@@ -24,8 +24,5 @@ Under \code{./man/roxygen/meta.R}, you will find where to store these family/key
 \examples{
 hello_admiral(hw = FALSE)
 }
-\author{
-Open Source
-}
 \concept{der_adxx}
 \keyword{der_adxx}

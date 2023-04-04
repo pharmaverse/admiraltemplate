@@ -28,7 +28,7 @@ reference:
 
 - title: Advanced Functions
 - subtitle: Pre-Defined Source Objects
-  desc: Source objects defined by {admiralext}
+  desc: Source objects defined by {admiraltemplate}
 - contents:
   - has_keyword("source_specifications")
 
@@ -56,7 +56,7 @@ navbar:
   components:
     getstarted:
       text: Get Started
-      href: articles/admiralext.html
+      href: articles/admiraltemplate.html
     reference:
       text: Reference
       href: reference/index.html

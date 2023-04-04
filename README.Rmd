@@ -123,7 +123,7 @@ Please thoroughly read the Package Extension Guidance above.  The intention of t
      - This will ensure that your development environment for your extension package is synced with other admiral packages
 1.  Update/Remove the following files to use your extension name:
     - `DESCRIPTION` File - Name, Authors
-    - `admiralext.Rproj`
+    - `admiraltemplate.Rproj`
     - `testthat.R`
     - `News.md`
 1.  Run `devtools::load_all()` and resolve issues

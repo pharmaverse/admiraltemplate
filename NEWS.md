@@ -1,4 +1,4 @@
-# admiralext 0.0.2
+# admiraltemplate 0.0.2
 
 ## New Features
 
@@ -18,7 +18,9 @@
 
 ## Various
 
-# admiralext 0.0.1
+ - Renamed from `admiralext` to `admiraltemplate`
+ 
+# admiraltemplate 0.0.1
 
 ## New Features
 
