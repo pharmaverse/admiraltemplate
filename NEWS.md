@@ -2,13 +2,19 @@
 
 ## New Features
 
+ - New `renv` lock files were setup (#48)
+
 ## Updates of Existing Functions
 
 ## Breaking Changes
 
 ## Documentation
 
- - Updates across documentation made to match v0.10.0 of `admiral` (#48)
+ - Many updates across documentation made to match v0.10.0 of `admiral` (PR #51)[https://github.com/pharmaverse/admiraltemplate/pull/51], including: 
+ - Links were fixed on the website 
+ - Templates were aligned to current standards
+ - Package dependencies were updated
+ - Explanation on how to use family/keywords has been provided
 
 ## Various
 
