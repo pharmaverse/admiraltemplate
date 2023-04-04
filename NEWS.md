@@ -10,11 +10,11 @@
 
 ## Documentation
 
- - Many updates across documentation made to match v0.10.0 of `admiral` (PR #51)[https://github.com/pharmaverse/admiraltemplate/pull/51], including: 
+ - Many updates across documentation made to match v0.10.0 of `admiral` [PR #51](https://github.com/pharmaverse/admiraltemplate/pull/51), including: 
  - Links were fixed on the website 
- - Templates were aligned to current standards
+ - Templates were aligned to current `admiral` standards
  - Package dependencies were updated
- - Explanation on how to use family/keywords has been provided
+ - Explanation on how to use family/keywords have been provided
 
 ## Various
 
