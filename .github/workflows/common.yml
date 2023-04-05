@@ -17,7 +17,6 @@ on:
       - main
       - devel
       - patch
-      - pre-release
   # 'pull_request' events are triggered when PRs are
   # created against one of these target branches.
   pull_request:
@@ -25,7 +24,6 @@ on:
       - main
       - devel
       - patch
-      - pre-release
   # 'release' events are triggered when...
   # you guessed it - when releases are made.
   release:
