@@ -17,3 +17,5 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(admiraltemplate)
 ```
+
+Introduction to how to use the package extension...
