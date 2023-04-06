@@ -11,7 +11,7 @@
     United States Food and Drug Administration (FDA). Analysis derivations are
     implemented in accordance with the "Analysis Data Model Implementation Guide"
     (CDISC Analysis Data Model Team, 2021, &lt;https://www.cdisc.org/standards/foundational/adam/adamig-v1-3-release-package&gt;).'>
-<title>ADaM in R Asset Library - Extension • admiralext</title>
+<title>ADaM in R Asset Library - Extension • admiraltemplate</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -41,9 +41,9 @@
 
     <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-primary"><div class="container">
     
-    <a class="navbar-brand me-2" href="index.html">admiralext</a>
+    <a class="navbar-brand me-2" href="index.html">admiraltemplate</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.2</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,7 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
-  <a class="nav-link" href="articles/admiralext.html">Get Started</a>
+  <a class="nav-link" href="articles/admiraltemplate.html">Get Started</a>
 </li>
 <li class="nav-item">
   <a class="nav-link" href="reference/index.html">Reference</a>
@@ -67,12 +67,6 @@
 <li class="nav-item">
   <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
-<!-- start dropdown for versions --> <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown" role="button"
-          aria-expanded="false" aria-haspopup="true"
-          id="dropdown-versions">Versions</a> <div class="dropdown-menu" aria-labelledby="dropdown-versions"> <a class="dropdown-item" data-toggle="tooltip" title="" href="https://pharmaverse.github.io/admiraltemplate/main">main</a> </div></li>
-<!-- end dropdown for versions -->
       </ul>
 <form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
@@ -113,10 +107,10 @@
 </h2>
 <p>To be included as an <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> package extension we expect developers to adhere to the following standards:</p>
 <ul>
-<li><a href="https://pharmaverse.github.io/admiral/main" class="external-link">Code of Conduct</a></li>
-<li><a href="https://pharmaverse.github.io/admiral/main" class="external-link">Manifesto</a></li>
-<li><a href="https://pharmaverse.github.io/admiraldev/main/articles/programming_strategy.html" class="external-link">Programming strategy</a></li>
-<li><a href="https://pharmaverse.github.io/admiraldev/main/articles/development_process.html" class="external-link">Development process</a></li>
+<li><a href="https://pharmaverse.github.io/admiral/main/CODE_OF_CONDUCT.html" class="external-link">Code of Conduct</a></li>
+<li><a href="https://pharmaverse.github.io/admiral/main/index.html?q=manifest#admiral-manifesto" class="external-link">Manifesto</a></li>
+<li><a href="https://pharmaverse.github.io/admiraldev/main/articles/programming_strategy.html" class="external-link">Programming Strategy</a></li>
+<li><a href="https://pharmaverse.github.io/admiraldev/main/articles/development_process.html" class="external-link">Development Process</a></li>
 <li>Follow consistent workflow checks</li>
 <li>A CRAN Release means 90% or greater test coverage</li>
 </ul>
@@ -150,28 +144,28 @@
 </li>
 <li>Agree on a charter and expectations of each company, e.g. we usually ask for at least 3 developers with at least 25% capacity and a mix of R, GitHub and TA experience. Within the charter make sure the scope and timelines are clear. <em>It is important here not to try to boil the ocean. Focus first on the very common endpoints required as a foundation and then the package can build up from here via contributions from both the co-development companies and also the wider across-industry admiral community. If useful, the <code>{admiralonco}</code> charter could be shared as a guide.</em>
 </li>
-<li>Each company should start to identify the required developer resources. Then they all need to attend one of the monthly admiral onboarding sessions (as advertised via our Slack channel - which they should join using this <a href="https://join.slack.com/t/pharmaverse/shared_invite/zt-yv5atkr4-Np2ytJ6W_QKz_4Olo7Jo9A" class="external-link">link</a>). All should read up on the admiral <a href="https://pharmaverse.github.io/admiral/main" class="external-link">site</a>, especially the developer guides which all need to be followed for package extensions.</li>
+<li>Each company should start to identify the required developer resources. Then they all need to attend one of the monthly admiral onboarding sessions (as advertised via our Slack channel - which they should join using this <a href="https://join.slack.com/t/pharmaverse/shared_invite/zt-yv5atkr4-Np2ytJ6W_QKz_4Olo7Jo9A" class="external-link">link</a>). All should read up on the admiral <a href="https://pharmaverse.github.io/admiral/main/" class="external-link">site</a>, especially the developer guides which all need to be followed for package extensions.</li>
 <li>Optionally it can be useful to host a kick-off meeting to decide how the team will work, for which we recommend agile/scrum practices.</li>
 <li>Set up a “admiralxxx_dev” channel on Slack to add all team members to for informal team chat, and agree a way to share working documents across the co-development team.</li>
 <li>A useful starter development activity could be to look into <code>{admiral.test}</code> to check that the test data there is sufficient for your TA needs, e.g. for <code>{admiralonco}</code> we had to generate new test data for SDTM domains such as RS and TU. Note that no personal data should be used here (even if anonymized) and it is important to keep any data generated in-line with the CDISC pilot data we use here, i.e. use same USUBJIDs as DM etc.</li>
 <li>Optionally draft, agree and sign a collaboration agreement if the collaborating companies so wish, as this could be useful for protecting secondary IP such as company standard specifications that may be shared within the team. An example is stored <a href="https://github.com/pharmaverse/pharmaverse/blob/main/content/contribute/Pharmaverse%20Collaborative%20Agreement%20(template).docx" class="external-link">here</a>, but work with your Legal teams as required.</li>
 <li>Share company-specific implementations and specifications to be able to harmonize into your design strategy for the package extension. <em>Here it is important to remain pragmatic and consider a higher perspective than any one company. Engage your company standards representatives and where you find discrepancies across company approaches then question if you really need to be doing things differently here (do health authorities or patients benefit at all if you do?). Also consider that we always expect a level of company-specifics to be covered in the internal company package extensions.</em>
 </li>
-<li>Set up a new public GitHub repo under the <a href="https://github.com/pharmaverse" class="external-link">pharmaverse org</a> using template <a href="https://github.com/pharmaverse/admiraltemplate" class="external-link uri">https://github.com/pharmaverse/admiraltemplate</a> - this includes set-up pieces (such as CI/CD checks and issue/PR templates) that will enable your package to stay consistent with others in the admiral family, as well as the same core package dependencies and versions. See Quick Start Guide for Template section below for instructions. <em>Note that this step requires org member access which could be granted by of the pharmaverse council reps, who are admins for this org. Also you are free to add additional package dependencies as needed assuming only reliable packages are used, but they must not depend on newer versions of other packages (always reply “no” if updates are suggested during installation).</em>
+<li>Set up a new public GitHub repo under the <a href="https://github.com/pharmaverse" class="external-link">pharmaverse org</a> using <a href="https://github.com/pharmaverse/admiraltemplate" class="external-link">admiraltemplate</a> - this includes set-up pieces (such as CI/CD checks and issue/PR templates) that will enable your package to stay consistent with others in the admiral family, as well as the same core package dependencies and versions. See Quick Start Guide for Template section below for instructions. <em>Note that this step requires org member access which could be granted by of the pharmaverse council reps, who are admins for this org. Also you are free to add additional package dependencies as needed assuming only reliable packages are used, but they must not depend on newer versions of other packages (always reply “no” if updates are suggested during installation).</em>
 </li>
 <li>Once the repo is available the technical lead could be granted admin access to this repo and then could set up a GitHub team with the same name as the package extension to assign required access for all other co-development team members. Most will only require write access, but you may choose to give the other leads admin access as well so that never a bottle-neck waiting on one person.</li>
 <li>Update the template license file in your repo by adding the co-development company names in place of Roche &amp; GSK - for <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> package extensions we use Apache 2.0, which is our preferred permissive license. Agree with the co-development companies any required extra wording for the copyright/IP section.</li>
-<li>Set up a project board, such as <a href="https://github.com/pharmaverse/admiral/projects/1" class="external-link">link</a>, to help manage your backlog.</li>
+<li>Set up a project board, such as <a href="https://github.com/orgs/pharmaverse/projects/12" class="external-link">this</a>, to help manage your backlog.</li>
 <li>Assuming you work under agile/scrum, then create a product backlog, prioritize and make a sprint plan.</li>
-<li>The intention is always to re-use as much as possible from <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> core package. If you find anything additional needed for the package extension, you should first question whether it might be a common need for other TAs and if so consider instead raising an issue to <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> core. When designing new functions always try to stay aligned with the <a href="https://pharmaverse.github.io/admiraldev/main" class="external-link">programming strategy.</a>.</li>
-<li>Start development of your foundational first release 0.1.0. Follow a consistent <a href="https://pharmaverse.github.io/admiraldev/main" class="external-link">development process</a> to <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>.</li>
+<li>The intention is always to re-use as much as possible from <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> core package. If you find anything additional needed for the package extension, you should first question whether it might be a common need for other TAs and if so consider instead raising an issue to <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> core. When designing new functions always try to stay aligned with the <a href="https://pharmaverse.github.io/admiraldev/main/articles/programming_strategy.html" class="external-link">programming strategy.</a>.</li>
+<li>Start development of your foundational first release 0.1.0. Follow a consistent <a href="https://pharmaverse.github.io/admiraldev/main/articles/development_process.html" class="external-link">development process</a> to <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a>.</li>
 <li>Line up testers from your companies and others and set expectations around when you believe a stable version would be available for user testing. You can use the admiral Slack community to raise interest to get involved.</li>
 <li>Add a pharmaverse badge to your README: <a href="https://pharmaverse.org/contribute/badges/" class="external-link uri">https://pharmaverse.org/contribute/badges/</a> - needs support from a pharmaverse council rep.</li>
-<li>Raise an <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> repo issue to ensure your package extension site is linked from the core <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> site <a href="https://pharmaverse.github.io/admiral/main" class="external-link">here.</a>
+<li>Raise an <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> repo issue to ensure your package extension site is linked from the core <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> site <a href="https://pharmaverse.github.io/admiral/main/index.html#types-of-packages" class="external-link">here.</a>
 </li>
 <li>It is important that the <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> family of packages keep to a similar release schedule and cadence, in order to ease adoption by our users and to give clear expectations. The <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> core package cadence of releases is one every quarter on a fixed schedule (every first Monday of the last month of a quarter - March, June, September, December). The core package will set the release schedule for the package extensions to follow, i.e. once <a href="https://pharmaverse.github.io/admiral/" class="external-link">admiral</a> releases we’d expect package extension releases targeted within a 2 week window. These releases are communicated via our Slack channel as well as at our quarterly user community meetings.</li>
 <li>Once you are happy your package extension has been well tested and is at a sufficient state then make a submission to CRAN. The technical lead should be named as maintainer. After the CRAN release, you should advertise this via Slack &amp; LinkedIn.</li>
-<li>Plan any future further enhancements and make issues. When your team feels ready you can open up to development contributions for these from the wider community - see <a href="https://pharmaverse.github.io/admiraldev/main" class="external-link">this page.</a>. Please use the <em>“good first issue”</em> (ideal for new starters) &amp; <em>“help wanted”</em> (ideal for more experienced contributors) issue labels.</li>
+<li>Plan any future further enhancements and make issues. When your team feels ready you can open up to development contributions for these from the wider community - see <a href="https://pharmaverse.github.io/admiral/main/CONTRIBUTING.html#type-1-contribution-with-code" class="external-link">this page.</a>. Please use the <em>“good first issue”</em> (ideal for new starters) &amp; <em>“help wanted”</em> (ideal for more experienced contributors) issue labels.</li>
 </ol>
 </div>
 <div class="section level2">
@@ -179,9 +173,9 @@
 </h2>
 <p>Please thoroughly read the Package Extension Guidance above. The intention of the Quick Start is to just get the template code into a new repo and check that the package works in your environment. Please contact us via slack if any issues arise.</p>
 <ol style="list-style-type: decimal">
-<li>Click the Green ‘Use this Template’ Button.</li>
+<li>Click the Green <code>Use this Template</code> Button.</li>
 <li>Change owner to <code>pharmaverse</code> and enter your repository name</li>
-<li>Create <code>devel</code> and <code>pre-release</code> branches. These will be important later for workflows!</li>
+<li>Create <code>devel</code> and <code>patch</code> branches. These will be important later for workflows!</li>
 <li>Once repo has been created click Green Code button and download the repo using <code>https</code> or <code>ssh</code>
 </li>
 <li>Run <code><a href="https://rstudio.github.io/renv/reference/restore.html" class="external-link">renv::restore()</a></code> - you will see a prompt and this will take a few minutes<ul><li>This will ensure that your development environment for your extension package is synced with other admiral packages</li></ul>
@@ -199,12 +193,12 @@
 <li>Run <code><a href="https://pkgdown.r-lib.org/reference/build_site.html" class="external-link">pkgdown::build_site()</a></code><ul><li>Reach out to slack for help with creating a hex sticker/logo to replace pharmaverse logo</li></ul>
 </li>
 <li>
-<em>Recommended</em>: Review the <a href="https://github.com/pharmaverse/admiralci" class="external-link">documentation on the CI/CD workflows</a> for information about how to reuse the workflows from this template. Pay special attention to the section on creating the <code>badges</code> orphan branch in <a href="https://github.com/pharmaverse/admiralci#code-coverageyml" class="external-link">this section</a>.</li>
+<em>Recommended</em>: Review the <a href="https://pharmaverse.github.io/admiralci/main/#what-these-workflows-do" class="external-link">documentation on the CI/CD workflows</a> for information about how to reuse the workflows from this template. Pay special attention to the section on creating the <code>badges</code> orphan branch in <a href="https://pharmaverse.github.io/admiralci/main/#code-coverage" class="external-link">this section</a>.</li>
 <li>Test out a dummy branch and do a Pull Request to ensure CI/CD works.</li>
 <li>Any clearly dummy files like <code>R/my_first_fcn.R</code> or <code>inst/templates/ad_adxx.R</code> can be updated or removed.</li>
 <li>Set up <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule" class="external-link">branch protections rules</a> for <code>main</code>, <code>devel</code>, and optionally for <code>pre-release</code> and <code>test</code> depending on your branching strategy.</li>
 <li>Set up and assign admin and write rights in Settings/Collaborators for members of the repository - using a GitHub team for all developers.</li>
-<li>Change badges and hex image in <code>Readme.md</code> to your package.</li>
+<li>Change badges and hex image in <code>README.Rmd</code> to your package.</li>
 </ol>
 </div>
 </div>
@@ -227,7 +221,7 @@
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html#citation">Citing admiralext</a></li>
+<li><a href="authors.html#citation">Citing admiraltemplate</a></li>
 </ul>
 </div>
 
