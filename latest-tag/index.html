@@ -100,6 +100,7 @@
 </h1>
 </div>
 <!-- badges: start -->
+
 <div class="section level2">
 <h2 id="table-of-contents">Table of Contents<a class="anchor" aria-label="anchor" href="#table-of-contents"></a>
 </h2>
@@ -186,9 +187,13 @@
 <li>Create <code>devel</code> and <code>patch</code> branches. These will be important later for workflows!</li>
 <li>Once repo has been created click Green Code button and download the repo using <code>https</code> or <code>ssh</code>
 </li>
-<li>Run <code><a href="https://rstudio.github.io/renv/reference/restore.html" class="external-link">renv::restore()</a></code> - you will see a prompt and this will take a few minutes<ul><li>This will ensure that your development environment for your extension package is synced with other admiral packages</li></ul>
+<li>Run <code><a href="https://rstudio.github.io/renv/reference/restore.html" class="external-link">renv::restore()</a></code> - you will see a prompt and this will take a few minutes
+<ul>
+<li>This will ensure that your development environment for your extension package is synced with other admiral packages</li>
+</ul>
 </li>
-<li>Update/Remove the following files to use your extension name:<ul>
+<li>Update/Remove the following files to use your extension name:
+<ul>
 <li>
 <code>DESCRIPTION</code> File - Name, Authors</li>
 <li><code>admiralext.Rproj</code></li>
@@ -198,7 +203,10 @@
 </li>
 <li>Run <code><a href="https://devtools.r-lib.org/reference/load_all.html" class="external-link">devtools::load_all()</a></code> and resolve issues</li>
 <li>Run <code><a href="https://devtools.r-lib.org/reference/document.html" class="external-link">devtools::document()</a></code> and resolve issues</li>
-<li>Run <code><a href="https://pkgdown.r-lib.org/reference/build_site.html" class="external-link">pkgdown::build_site()</a></code><ul><li>Reach out to slack for help with creating a hex sticker/logo to replace pharmaverse logo</li></ul>
+<li>Run <code><a href="https://pkgdown.r-lib.org/reference/build_site.html" class="external-link">pkgdown::build_site()</a></code>
+<ul>
+<li>Reach out to slack for help with creating a hex sticker/logo to replace pharmaverse logo</li>
+</ul>
 </li>
 <li>
 <em>Recommended</em>: Review the <a href="https://pharmaverse.github.io/admiralci/main/#what-these-workflows-do" class="external-link">documentation on the CI/CD workflows</a> for information about how to reuse the workflows from this template. Pay special attention to the section on creating the <code>badges</code> orphan branch in <a href="https://pharmaverse.github.io/admiralci/main/#code-coverage" class="external-link">this section</a>.</li>
