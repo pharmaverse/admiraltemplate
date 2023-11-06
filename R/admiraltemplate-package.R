@@ -27,5 +27,5 @@
 #' @importFrom admiral derive_vars_dy
 #' @importFrom admiraldev assert_logical_scalar assert_character_vector assert_vars
 #'             assert_data_frame assert_character_scalar assert_numeric_vector assert_filter_cond
-#'             assert_symbol assert_order_vars
+#'             assert_symbol
 "_PACKAGE"
