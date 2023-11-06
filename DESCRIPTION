@@ -20,7 +20,7 @@ RoxygenNote: 7.2.3
 Depends: R (>= 3.5)
 Imports:
     admiral (>= 0.10.0),
-    admiraldev (>= 0.3.0),
+    admiraldev (>= 0.5.0),
     dplyr (>= 0.8.4),
     hms (>= 0.5.3),
     lifecycle (>= 0.1.0),
@@ -32,7 +32,7 @@ Imports:
     tidyr (>= 1.0.2),
     tidyselect (>= 1.1.0)
 Suggests:
-    admiral.test (>= 0.5.0),
+    pharmaversesdtm,
     covr,
     devtools,
     diffdf,
