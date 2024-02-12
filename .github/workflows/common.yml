@@ -5,10 +5,6 @@
 name: Admiral Workflows
 
 ---
-# Source: https://github.com/pharmaverse/admiralci
-# Common workflows designed for Admiral
-# but can be easily used by any other R package
-name: admiral CI/CD Workflows
 
 on:
   # 'workflow_dispatch' gives you the ability
