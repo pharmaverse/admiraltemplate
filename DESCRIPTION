@@ -15,8 +15,6 @@ Description: A toolbox for programming Clinical Data Standards Interchange
 License: Apache License (>= 2)
 URL: https://pharmaverse.github.io/admiraltemplate,
     https://github.com/pharmaverse/admiraltemplate
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
 Depends: 
     R (>= 3.5)
 Imports:
@@ -56,4 +54,4 @@ Encoding: UTF-8
 Language: en-US
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
