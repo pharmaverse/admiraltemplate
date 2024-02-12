@@ -1,5 +1,7 @@
 # admiraltemplate 0.0.3.9000
 
+- Removed renv and related files (#70)
+
 ## Updates to site
 
  - Package Extension guidance on the front page was updated and moved to [this location](https://pharmaverse.github.io/admiraldev/main/articles/package_extensions.html) in `{admiraldev}`, and a link was added to point to the new location (#61).
