@@ -1,4 +1,4 @@
-# admiraltemplate 0.0.3.9001
+# admiraltemplate 0.0.3
 
 - Removed renv and related files (#70)
 
