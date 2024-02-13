@@ -60,13 +60,6 @@ jobs:
     needs: get_r_version
     with:
       r-version: "${{ needs.get_r_version.outputs.r-version }}"
-  readme:
-    name: Render README
-    uses: pharmaverse/admiralci/.github/workflows/readme-render.yml@main
-    if: github.event_name == 'push'
-    needs: get_r_version
-    with:
-      r-version: "${{ needs.get_r_version.outputs.r-version }}"
   validation:
     name: Validation
     uses: pharmaverse/admiralci/.github/workflows/r-pkg-validation.yml@main
@@ -128,9 +121,9 @@ jobs:
     needs: get_r_version
     with:
       r-version: "${{ needs.get_r_version.outputs.r-version }}"
-  vbump:
-    name: Version Bump 🤜🤛
-    if: github.event_name == 'push'
-    uses: insightsengineering/r.pkg.template/.github/workflows/version-bump.yaml@main
-    secrets:
-      REPO_GITHUB_TOKEN: ${{ secrets.PHARMAVERSE_BOT }}
+  # vbump:
+  #   name: Version Bump 🤜🤛
+  #   if: github.event_name == 'push'
+  #   uses: insightsengineering/r.pkg.template/.github/workflows/version-bump.yaml@main
+  #   secrets:
+  #     REPO_GITHUB_TOKEN: ${{ secrets.PHARMAVERSE_BOT }}

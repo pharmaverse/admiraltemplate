@@ -1,10 +1,19 @@
-# admiraltemplate 0.0.3.9001
+# admiraltemplate 0.0.3
 
 - Removed renv and related files (#70)
 
 ## Updates to site
 
- - Package Extension guidance on the front page was updated and moved to [this location](https://pharmaverse.github.io/admiraldev/main/articles/package_extensions.html) in `{admiraldev}`, and a link was added to point to the new location (#61).
+ - Package Extension guidance on the front page was updated and moved to [this location](https://pharmaverse.github.io/admiraldev/articles/package_extensions.html) in `{admiraldev}`, and a link was added to point to the new location (#61).
+
+## CI workflows
+
+- [`admiralci` workflows](https://github.com/pharmaverse/admiralci) has been updated. Indeed, workflows are not anymore based on `renv` framework to manage dependencies (`devtools` is used instead). Moreover, we now use latest version of `R` for all workflows, and run `R CMD CHECKS` for following R release version (R latest stable version), R devel version (in development version), and R previous release. More details are available in [admiralci doc](https://pharmaverse.github.io/admiralci/index.html).
+As a result, `.github/workflows/common.yml` file has been updated, and all `renv` configurations has been removed.
+
+## admiral.test removed
+
+- `admiral.test` package has been replaced by [`pharmaversesdtm`](https://github.com/pharmaverse/pharmaversesdtm)
 
 # admiraltemplate 0.0.2
 
