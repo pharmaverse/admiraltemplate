@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">admiraltemplate</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.3.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.3</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,11 +54,22 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.0.3.9000" id="admiraltemplate-0039000">admiraltemplate 0.0.3.9000<a class="anchor" aria-label="anchor" href="#admiraltemplate-0039000"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.0.3" id="admiraltemplate-003">admiraltemplate 0.0.3<a class="anchor" aria-label="anchor" href="#admiraltemplate-003"></a></h2>
 <ul><li>Removed renv and related files (<a href="https://github.com/pharmaverse/admiraltemplate/issues/70" class="external-link">#70</a>)</li>
 </ul><div class="section level3">
-<h3 id="updates-to-site-0-0-3-9000">Updates to site<a class="anchor" aria-label="anchor" href="#updates-to-site-0-0-3-9000"></a></h3>
-<ul><li>Package Extension guidance on the front page was updated and moved to <a href="https://pharmaverse.github.io/admiraldev/main/articles/package_extensions.html" class="external-link">this location</a> in <a href="https://pharmaverse.github.io/admiraldev/" class="external-link">admiraldev</a>, and a link was added to point to the new location (<a href="https://github.com/pharmaverse/admiraltemplate/issues/61" class="external-link">#61</a>).</li>
+<h3 id="updates-to-site-0-0-3">Updates to site<a class="anchor" aria-label="anchor" href="#updates-to-site-0-0-3"></a></h3>
+<ul><li>Package Extension guidance on the front page was updated and moved to <a href="https://pharmaverse.github.io/admiraldev/articles/package_extensions.html" class="external-link">this location</a> in <a href="https://pharmaverse.github.io/admiraldev/" class="external-link">admiraldev</a>, and a link was added to point to the new location (<a href="https://github.com/pharmaverse/admiraltemplate/issues/61" class="external-link">#61</a>).</li>
+</ul></div>
+<div class="section level3">
+<h3 id="ci-workflows-0-0-3">CI workflows<a class="anchor" aria-label="anchor" href="#ci-workflows-0-0-3"></a></h3>
+<ul><li>
+<a href="https://github.com/pharmaverse/admiralci" class="external-link"><code>admiralci</code> workflows</a> has been updated. Indeed, workflows are not anymore based on <code>renv</code> framework to manage dependencies (<code>devtools</code> is used instead). Moreover, we now use latest version of <code>R</code> for all workflows, and run <code>R CMD CHECKS</code> for following R release version (R latest stable version), R devel version (in development version), and R previous release. More details are available in <a href="https://pharmaverse.github.io/admiralci/index.html" class="external-link">admiralci doc</a>. As a result, <code>.github/workflows/common.yml</code> file has been updated, and all <code>renv</code> configurations has been removed.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="admiraltest-removed-0-0-3">admiral.test removed<a class="anchor" aria-label="anchor" href="#admiraltest-removed-0-0-3"></a></h3>
+<ul><li>
+<code>admiral.test</code> package has been replaced by <a href="https://github.com/pharmaverse/pharmaversesdtm" class="external-link"><code>pharmaversesdtm</code></a>
+</li>
 </ul></div>
 </div>
     <div class="section level2">
