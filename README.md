@@ -30,9 +30,7 @@ to adhere to the following standards:
     Conduct](https://pharmaverse.github.io/admiral/CODE_OF_CONDUCT.html)
 -   [Manifesto](https://pharmaverse.github.io/admiral/index.html?q=manifest#admiral-manifesto)
 -   [Programming
-    Strategy](https://pharmaverse.github.io/admiraldev/main/articles/programming_strategy.html)
--   [Development
-    Process](https://pharmaverse.github.io/admiraldev/main/articles/development_process.html)
+    Strategy](https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html)
 -   Follow consistent workflow checks
 -   A CRAN Release means 90% or greater test coverage
 
@@ -64,6 +62,6 @@ The repository template includes the following:
 For detailed information regarding the ethos of `{admiral}` package
 extensions and how to decide if you should set your own one up, please
 see our [Package Extension
-Guidance](https://pharmaverse.github.io/admiraldev/main/articles/package_extensions.html).
+Guidance](https://pharmaverse.github.io/admiraldev/articles/package_extensions.html).
 You will also find details about team setup, suggested workflow and
 lessons learned from past package extensions.
