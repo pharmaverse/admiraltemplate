@@ -12,6 +12,10 @@ repo:
     user: https://github.com/
 news:
   cran_dates: true
+
+development:
+  mode: auto
+
 reference:
 
 - title: Derivations for Adding Variables
@@ -53,6 +57,7 @@ reference:
 navbar:
   structure:
     left: [getstarted, reference, articles, news]
+    right: [search, slack, history, newissue, github]
   components:
     getstarted:
       text: Get Started
@@ -65,3 +70,15 @@ navbar:
       menu:
       - text: Creating ADXX
         href: articles/adxx.html
+    history:
+      icon: fa-history
+      href: articles/website-versions.html
+      aria-label: Previous Release Websites
+    slack:
+      icon: fa-slack
+      href: https://app.slack.com/client/T028PB489D3/C02M8KN8269
+      aria-label: Slack
+    newissue:
+      icon: fa-bug
+      href: https://github.com/pharmaverse/admiraltemplate/issues/new/choose
+      aria-label: New Issue
