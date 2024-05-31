@@ -1,6 +1,6 @@
 # admiraltemplate 0.1.0
 
-- Initial package release focused on <<ADD INITIAL SCOPE>>
+- Initial package release focused on `<<ADD INITIAL SCOPE>>`
 
 Note that after first release you should then start maintaining this `NEWS.md` file for every user-facing update.
 You should categorise the updates under title sections for New Features, Updates of Existing Functions,
