@@ -47,8 +47,8 @@ The repository template includes the following:
 
 -   License file (Apache 2.0 - but company co-developers need to be
     added to copyright section)
--   Required folders (R; test; templates; vignettes; renv; etc)
--   Set-up files (DESCRIPTION; NAMESPACE; renv.lock; etc)
+-   Required folders (R; test; templates; vignettes; etc)
+-   Set-up files (DESCRIPTION; NAMESPACE; etc)
 -   Issue Templates (Bug Template; Feature Request; Documentation
     Request/Update; Onboarding)
 -   Pull Request Template
