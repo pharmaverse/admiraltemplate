@@ -1,7 +1,7 @@
 Type: Package
-Package: admiraltemplate
-Title: ADaM in R Asset Library - Extension
-Version: 0.0.3
+Package: `<<INSERT PACKAGE EXT NAME>>'
+Title: ADaM in R Asset Library - Extension Package for `<<INSERT TA>>`
+Version: 0.1.0
 Authors@R: 
     person("Open", "Source", , "admiraltemplate@pharmaverse.com", role = c("aut", "cre"))
 Description: A toolbox for programming Clinical Data Standards Interchange
@@ -11,16 +11,17 @@ Description: A toolbox for programming Clinical Data Standards Interchange
     Administration (FDA). Analysis derivations are implemented in
     accordance with the "Analysis Data Model Implementation Guide" (CDISC
     Analysis Data Model Team, 2021,
-    <https://www.cdisc.org/standards/foundational/adam/adamig-v1-3-release-package>).
+    <https://www.cdisc.org/standards/foundational/adam>).  The package is
+    an extension package of the 'admiral' package.
 License: Apache License (>= 2)
 URL: https://pharmaverse.github.io/admiraltemplate,
     https://github.com/pharmaverse/admiraltemplate
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1)
 Imports:
-    admiral (>= 0.10.0),
-    admiraldev (>= 0.5.0),
-    dplyr (>= 0.8.4),
+    admiral (>= 1.0.0),
+    admiraldev (>= 1.0.0),
+    dplyr (>= 1.0.5),
     hms (>= 0.5.3),
     lifecycle (>= 0.1.0),
     lubridate (>= 1.7.4),
@@ -31,22 +32,17 @@ Imports:
     tidyr (>= 1.0.2),
     tidyselect (>= 1.1.0)
 Suggests:
-    covr,
-    devtools,
     diffdf,
     DT,
+    htmltools,
     knitr,
-    lintr,
     methods,
-    miniUI,
-    pharmaversesdtm,
-    pkgdown,
+    pharmaversesdtm (>= 0.2.0),
+    reactable,
+    readxl,
     rmarkdown,
-    roxygen2,
-    spelling,
     testthat (>= 3.0.0),
-    tibble,
-    usethis
+    tibble
 VignetteBuilder: 
     knitr
 Config/testthat/edition: 3
