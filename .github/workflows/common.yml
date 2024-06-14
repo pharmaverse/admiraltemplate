@@ -122,7 +122,7 @@ jobs:
     with:
       r-version: "${{ needs.get_r_version.outputs.r-version }}"
   # vbump:
-  #   name: Version Bump 🤜🤛
+  #   name: Version Bump
   #   if: github.event_name == 'push'
   #   uses: insightsengineering/r.pkg.template/.github/workflows/version-bump.yaml@main
   #   secrets:
