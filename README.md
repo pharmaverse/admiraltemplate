@@ -6,7 +6,7 @@
 
 <!-- badges: start -->
 
-[<img src="http://pharmaverse.org/shields/admiral.svg">](https://pharmaverse.org)
+[![pharmaverse admiral Badge](http://pharmaverse.org/shields/admiral.svg)](https://pharmaverse.org)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/admiral)](https://CRAN.R-project.org/package=admiral)
 [![Test
