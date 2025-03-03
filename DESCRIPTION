@@ -1,5 +1,5 @@
 Type: Package
-Package: `<<INSERT PACKAGE EXT NAME>>'
+Package: admiraltemplate
 Title: ADaM in R Asset Library - Extension Package for `<<INSERT TA>>`
 Version: 0.1.0
 Authors@R: 
