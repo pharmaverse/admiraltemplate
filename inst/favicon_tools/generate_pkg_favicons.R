@@ -1,43 +1,34 @@
-#' Generate Apple Touch Icons and Favicon
-#'
-#' This function creates various sizes of favicons and Apple touch icons
-#' from a source logo image using the magick package.
-#'
-#' @param logo_path Path to the source logo image
-#' @param output_dir Directory to save generated icons
-#'
-#' @details
-#' The function generates:
-#' - Apple touch icons in sizes: 60, 76, 120, 152, 180 pixels
-#' - A generic apple-touch-icon
-#' - Favicon icons in sizes: 16, 32 pixels
-#' - A .ico file in sizes: 16, 32 pixels
-#'
-#' @return NULL (called for its side effects of creating icon files)
-#'
-#' @examples
-#' ## Method 1: Using default parameters
-#' # Uses default logo path (man/figures/logo.png)
-#' # and default output directory (pkgdown/favicon)
-#' \dontrun{
-#' generate_pkg_favicons()
-#' }
-#'
-#' ## Method 2: Specifying custom logo path
-#' # Uses a specific logo from the project
-#' \dontrun{
-#' generate_pkg_favicons(logo_path = "path/to/custom_logo.png")
-#' }
-#'
-#' #' ## Method 3: Specifying custom output directory
-#' # Uses a specific output location
-#' \dontrun{
-#' generate_pkg_favicons(output_dir = "path/to/output_dir")
-#' }
-#'
-#' @importFrom magick image_read image_resize image_write
-#' @importFrom purrr walk
-#' @export
+# Script to generate Apple Touch Icons and Favicon
+#
+# To use this script:
+# During development:
+#   source("inst/favicon_tools/generate_pkg_favicons.R")
+# After package installation:
+#   source(system.file("favicon_tools", "generate_pkg_favicons.R", package = "admiraltemplate"))
+#
+# Usage:
+#   generate_pkg_favicons(
+#     logo_path = "man/figures/logo.png",
+#     output_dir = "pkgdown/favicon"
+#   )
+#
+# Examples:
+# Method 1: Using default parameters
+# Uses default logo path (man/figures/logo.png)
+# and default output directory (pkgdown/favicon)
+# generate_pkg_favicons()
+#
+# Method 2: Specifying custom logo path
+# Uses a specific logo from the project
+# generate_pkg_favicons(logo_path = "path/to/custom_logo.png")
+#
+# Method 3: Specifying custom output directory
+# Uses a specific output location
+# generate_pkg_favicons(output_dir = "path/to/output_dir")
+
+library(magick)
+library(purrr)
+
 generate_pkg_favicons <- function(
     logo_path = "man/figures/logo.png",
     output_dir = "pkgdown/favicon") {

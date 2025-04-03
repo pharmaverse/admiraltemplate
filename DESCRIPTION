@@ -25,7 +25,6 @@ Imports:
     hms (>= 0.5.3),
     lifecycle (>= 0.1.0),
     lubridate (>= 1.7.4),
-    magick (>= 2.8.6),
     magrittr (>= 1.5),
     purrr (>= 0.3.3),
     rlang (>= 0.4.4),
