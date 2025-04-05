@@ -76,7 +76,7 @@ generate_pkg_favicons <- function(
     create_icon(logo, size, sprintf("apple-touch-icon-%dx%d.png", size, size))
   })
 
-  # Create generic apple-touch-icon (using largest size)
+  # Create generic Apple touch icon
   create_icon(logo, 180, "apple-touch-icon.png")
 
   # Generate favicon sizes

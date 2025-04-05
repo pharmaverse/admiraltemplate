@@ -6,3 +6,8 @@ Note that after first release you should then start maintaining this `NEWS.md` f
 You should categorize the updates under title sections for New Features, Updates of Existing Functions,
 Breaking Changes, Documentation, Various.
 Each update should also reference the original issue by adding at the end: (#ISSUE-NUMBER)
+
+
+## New Features
+
+- Tool to generate Apple touch icon and favicon given a package logo using generate_pkg_favicons() (#89)
