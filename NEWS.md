@@ -10,4 +10,4 @@ Each update should also reference the original issue by adding at the end: (#ISS
 
 ## New Features
 
-- Added a utility function `generate_pkg_favicons()` under `inst/favicon_tools` to help  generate Apple touch icons and favicons given a package logo. (#89)
+- Added a utility function `generate_pkg_favicons()` under `inst/favicon_tools` to help generate Apple touch icons and favicons given a package logo. (#89)
