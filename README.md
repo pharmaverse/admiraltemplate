@@ -12,9 +12,9 @@ status](https://www.r-pkg.org/badges/version/admiral)](https://CRAN.R-project.or
 Coverage](https://raw.githubusercontent.com/pharmaverse/admiraltemplate/badges/main/test-coverage.svg)](https://github.com/pharmaverse/admiraltemplate/actions/workflows/code-coverage.yml)
 <!-- badges: end -->
 
-TA Extension package for ADaM in R Asset Library {admiral}.
+TA Extension package for ADaM in R Asset Library {admiral}. 
 
-*Explore the rest of the packages in the {admiral} ecosystem [here](https://pharmaverse.github.io/admiralonco/cran-release/).*
+*Explore all the other packages in the [{admiral} ecosystem](https://pharmaverse.org/e2eclinical/adam/) to learn more about ADaM programming in R.*
 
 ## Table of Contents
 
