@@ -16,7 +16,6 @@ Coverage](https://raw.githubusercontent.com/pharmaverse/admiraltemplate/badges/m
 -   [What is included in the
     template](#what-is-included-in-the-template)
 -   [Package Extension Guidance](#package-extension-guidance)
--   [Quick Start Guide for Template](#quick-start-guide-for-template)
 
 ## Extension Expectations
 
