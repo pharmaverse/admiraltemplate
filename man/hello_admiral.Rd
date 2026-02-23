@@ -7,10 +7,15 @@
 hello_admiral(hw = TRUE)
 }
 \arguments{
-\item{hw}{TRUE or FALSE}
+\item{hw}{Boolean determining whether a hello message is returned.
+
+\describe{
+\item{Permitted values}{\code{TRUE}, \code{FALSE}}
+\item{Default value}{\code{TRUE}}
+}}
 }
 \value{
-Happy Message
+A message
 }
 \description{
 Says hello admiral
@@ -20,8 +25,11 @@ In the roxygen documentation you will find tags for family and keywords.
 This is to create organized sections for the Reference tab on the pkgdown website.
 You can modify the \verb{_pkgdown.yml} as necessary to create appropriate sections as necessary.
 Under \code{./man/roxygen/meta.R}, you will find where to store these family/keywords.
+You will also find custom permitted text under \code{./man/roxygen/rdx_meta.R} to
+standardize argument text.
 }
 \examples{
+hello_admiral()
 hello_admiral(hw = FALSE)
 }
 \concept{der_adxx}

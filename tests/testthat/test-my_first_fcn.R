@@ -1,20 +1,15 @@
-test_that("hello admiral greets without hw", {
-  expect_message(
-    hello_admiral(),
-    "^Welcome to the admiral family!\\n"
-  )
+# my_first_fcn ----
+
+## Test 1: outputs welcome message when hw = TRUE (default) -----
+test_that("my_first_fcn Test 1: outputs welcome message when hw = TRUE (default)", {
+  expect_snapshot({
+    hello_admiral()
+  })
 })
 
-test_that("hello admiral greets with hw", {
-  expect_message(
-    hello_admiral(hw = TRUE),
-    "^Welcome to the admiral family!\\n"
-  )
-})
-
-test_that("hello admiral greets with hw", {
-  expect_message(
-    hello_admiral(hw = FALSE),
-    "^Welcome to the admiral family!\\n"
-  )
+## Test 2: outputs crickets message when hw = FALSE
+test_that("my_first_fcn Test 2: outputs crickets message when hw = FALSE", {
+  expect_snapshot({
+    hello_admiral(hw = FALSE)
+  })
 })
