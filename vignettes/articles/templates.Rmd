@@ -1,8 +1,8 @@
 ---
-title: "Explore the admiral ADaM Templates"
+title: "Explore the admiraltemplate ADaM Templates"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Explore the admiral ADaM Templates}
+  %\VignetteIndexEntry{Explore the admiraltemplate ADaM Templates}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
