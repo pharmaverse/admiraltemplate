@@ -3,7 +3,7 @@
 
 # Add code to create test dataset xx and update this in `R/data.R`
 
-library(tibble)
+library(tibble) # nolint
 
 xx <- tribble(
   ~USUBJID,

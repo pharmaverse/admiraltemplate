@@ -21,6 +21,11 @@ Useful links:
 \author{
 \strong{Maintainer}: Open Source \email{admiraltemplate@pharmaverse.com}
 
+Other contributors:
+\itemize{
+  \item Company [copyright holder, funder]
+}
+
 }
 \concept{internal}
 \keyword{internal}
