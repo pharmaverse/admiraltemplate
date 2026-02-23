@@ -14,6 +14,8 @@
 ^admiraltemplate\.Rcheck$
 ^admiraltemplate.*\.tar\.gz$
 ^admiraltemplate.*\.tgz$
-^staged_dependencies.yaml$
+^staged_dependencies.yml$
 ^README.Rmd$
 ^\.devcontainer$
+^data-raw$
+^vignettes/articles$
