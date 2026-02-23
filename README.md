@@ -53,6 +53,7 @@ The repository template includes the following:
     auto-checks)
 -   Package badges (Test coverage; etc)
 -   Branch protection rules
+-   Tool to generate Apple touch icon and favicon
 
 ## Package Extension Guidance
 
