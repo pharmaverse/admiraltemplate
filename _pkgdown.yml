@@ -140,8 +140,8 @@ navbar:
     slack:
       icon: fa-slack
       href: https://pharmaverse.slack.com/
-      aria-label: Slack
+      aria-label: Join the pharmaverse Slack!
     newissue:
       icon: fa-bug
       href: https://github.com/pharmaverse/admiraltemplate/issues/new/choose
-      aria-label: New Issue
+      aria-label: Report an issue
