@@ -4,7 +4,7 @@
 ^pkgdown$
 ^_pkgdown\.yml$
 ^.github$
-^.lintr$
+^.lintr.R$
 ^docs$
 ^Meta$
 ^codecov\.yml$
@@ -17,3 +17,5 @@
 ^staged_dependencies.yaml$
 ^README.Rmd$
 ^\.devcontainer$
+^data-raw$
+^vignettes/articles$

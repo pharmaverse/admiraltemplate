@@ -2,8 +2,10 @@ Type: Package
 Package: admiraltemplate
 Title: ADaM in R Asset Library - Extension Package for `<<INSERT TA>>`
 Version: 0.1.0
-Authors@R: 
-    person("Open", "Source", , "admiraltemplate@pharmaverse.com", role = c("aut", "cre"))
+Authors@R: c(
+    person("Open", "Source", , "admiraltemplate@pharmaverse.com", role = c("aut", "cre")),
+    person("Company", role = c("cph", "fnd"))
+  )
 Description: A toolbox for programming Clinical Data Standards Interchange
     Consortium (CDISC) compliant Analysis Data Model (ADaM) datasets in R.
     ADaM datasets are a mandatory part of any New Drug or Biologics
@@ -19,9 +21,10 @@ URL: https://pharmaverse.github.io/admiraltemplate,
 Depends: 
     R (>= 4.1)
 Imports:
-    admiral (>= 1.0.0),
-    admiraldev (>= 1.0.0),
-    dplyr (>= 1.0.5),
+    admiraldev (>= 1.4.0),
+    admiral (>= 1.4.1),
+    cli (>= 3.6.2),
+    dplyr (>= 1.1.1),
     hms (>= 0.5.3),
     lifecycle (>= 0.1.0),
     lubridate (>= 1.7.4),
@@ -34,20 +37,23 @@ Imports:
 Suggests:
     diffdf,
     DT,
+    here,
     htmltools,
     knitr,
     methods,
-    pharmaversesdtm (>= 0.2.0),
+    pharmaversesdtm (>= 1.0.0),
     reactable,
     readxl,
     rmarkdown,
     testthat (>= 3.0.0),
-    tibble
+    tibble,
+    withr
 VignetteBuilder: 
     knitr
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US
 LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+Roxygen: list(markdown = TRUE, roclets = c("collate", "namespace",
+    "admiraldev::rdx_roclet"))
+RoxygenNote: 7.3.3
