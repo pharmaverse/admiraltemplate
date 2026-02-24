@@ -1,0 +1,111 @@
+# admiral Package Extension Template
+
+*Explore all the other packages in the [{admiral}
+ecosystem](https://pharmaverse.org/e2eclinical/adam/) to learn more
+about ADaM programming in R.*
+
+## Table of Contents
+
+- [Extension Expectations](#extension-expectations)
+- [What is included in the template](#what-is-included-in-the-template)
+- [Package Extension Guidance](#package-extension-guidance)
+
+## Extension Expectations
+
+To be included as an [admiral](https://pharmaverse.github.io/admiral/)
+package extension we expect developers to adhere to the following
+standards:
+
+- [Code of
+  Conduct](https://pharmaverse.github.io/admiral/CODE_OF_CONDUCT.html)
+- [Manifesto](https://pharmaverse.github.io/admiral/index.html?q=manifest#admiral-manifesto)
+- [Programming
+  Strategy](https://pharmaverse.github.io/admiraldev/articles/programming_strategy.html)
+- Follow consistent workflow checks
+- A CRAN Release means 90% or greater test coverage
+
+We have developed this repository template in order to reduce the burden
+on developers to follow these standards. This template will also help to
+harmonize the [admiral](https://pharmaverse.github.io/admiral/) family
+of R packages, to ensure a consistent user experience and ease of
+installing and adopting all the packages. With this in mind, we expect
+the same core package dependencies and versions as used for
+[admiral](https://pharmaverse.github.io/admiral/).
+
+## What is included in the template
+
+The repository template includes the following:
+
+- License file (Apache 2.0 - but company co-developers need to be added
+  to copyright section)
+- Required folders (R; test; templates; vignettes; etc)
+- Set-up files (DESCRIPTION; NAMESPACE; etc)
+- Issue Templates (Bug Template; Feature Request; Documentation
+  Request/Update; Onboarding)
+- Pull Request Template
+- Workflow actions (a selection of generic and specific CI/CD
+  auto-checks)
+- Package badges (Test coverage; etc)
+- Branch protection rules
+- Tool to generate Apple touch icon and favicon
+
+## Package Extension Guidance
+
+For detailed information regarding the ethos of
+[admiral](https://pharmaverse.github.io/admiral/) package extensions and
+how to decide if you should set your own one up, please see our [Package
+Extension
+Guidance](https://pharmaverse.github.io/admiraldev/articles/package_extensions.html).
+You will also find details about team setup, suggested workflow and
+lessons learned from past package extensions.
+
+# Package index
+
+## Derivations for Adding Variables
+
+### ADXX-specific
+
+Derivation Functions helpful for building the ADXX dataset
+
+- [`hello_admiral()`](https://pharmaverse.github.io/admiraltemplate/reference/hello_admiral.md)
+  : Derive Extension Example
+
+## Derivations for Adding Parameters
+
+### ADXX-specific
+
+Parameter Derivation Functions helpful for building the ADXX dataset
+
+## Advanced Functions
+
+### Pre-Defined Source Objects
+
+Source objects defined by {admiraltemplate}
+
+## Utility Functions
+
+### Utilities for Formatting Observations
+
+### Utilities for Dataset Checking
+
+### Utilities for Filtering Observations
+
+## Example Datasets
+
+You can run
+[`admiral::use_ad_template()`](https:/pharmaverse.github.io/admiral/v1.4.1/cran-release/reference/use_ad_template.html)
+to produce additional datasets
+
+- [`xx`](https://pharmaverse.github.io/admiraltemplate/reference/xx.md)
+  : xx Dataset
+
+# Articles
+
+### All vignettes
+
+- [Get
+  Started](https://pharmaverse.github.io/admiraltemplate/articles/admiraltemplate.md):
+- [Creating
+  ADXX](https://pharmaverse.github.io/admiraltemplate/articles/adxx.md):
+- [Explore the admiraltemplate ADaM
+  Templates](https://pharmaverse.github.io/admiraltemplate/articles/templates.md):
