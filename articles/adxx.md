@@ -10,6 +10,6 @@ Steps involved to create an `ADXX` ADaM.
 
 ## Example Scripts
 
-| ADaM | Sourcing Command                                                |
-|------|-----------------------------------------------------------------|
-| ADXX | `admiral::use_ad_template("ADXX", package = "admiraltemplate")` |
+| ADaM                                                                                 | Sourcing Command                                                |
+|--------------------------------------------------------------------------------------|-----------------------------------------------------------------|
+| [`ADXX`](https://pharmaverse.github.io/admiraltemplate/articles/templates.html#adxx) | `admiral::use_ad_template("ADXX", package = "admiraltemplate")` |

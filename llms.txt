@@ -93,7 +93,7 @@ Source objects defined by {admiraltemplate}
 ## Example Datasets
 
 You can run
-[`admiral::use_ad_template()`](https:/pharmaverse.github.io/admiral/v1.4.1/cran-release/reference/use_ad_template.html)
+[`admiral::use_ad_template()`](https://pharmaverse.github.io/admiral/cran-release/reference/use_ad_template.html)
 to produce additional datasets
 
 - [`xx`](https://pharmaverse.github.io/admiraltemplate/reference/xx.md)
